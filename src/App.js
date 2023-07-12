@@ -1,7 +1,10 @@
+import Sidebar from "./components/layout/Header";
+
+
 function App() {
   return (
-    <div className="App">
-      <h1>React</h1>
+    <div>
+      <Sidebar />
     </div>
   );
 }
