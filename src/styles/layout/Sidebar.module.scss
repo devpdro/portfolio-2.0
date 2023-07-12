@@ -1,5 +1,3 @@
-@import url(../../components/layout/Sidebar.js);
-
 .container {
   background-color: #171923;
   position: fixed;
@@ -7,7 +5,7 @@
   top: 0px;
   left: 0px;
   width: 300px;
-  animation: showSidebar 0.4s;
+  animation: showSidebar 0.2s ease-in;
 
   > svg {
     position: fixed;

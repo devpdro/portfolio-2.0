@@ -14,15 +14,13 @@ import {
 
 import SidebarItem from "./SidebarItem";
 
-const Sidebar = ({ active, sidebar }) => {
+const Sidebar = ({ active }) => {
   const closeSidebar = () => {
     active(false);
   };
 
-  const leftValue = sidebar ? "0" : "-100%";
-
   return (
-    <nav style={{ left: leftValue }} className={styles.container} sidebar={active}>
+    <nav className={styles.container} style={{ left: active ? "0" : "-100%" }}>
       <FaTimes onClick={closeSidebar} />
       <div className={styles.content}>
         <SidebarItem Icon={FaHome} Text="Home" />

@@ -9,10 +9,10 @@ const Header = () => {
   const showSiderbar = () => setSidebar(!sidebar);
 
   return (
-    <header className={styles.container}>
+    <nav className={styles.container}>
       <FaBars onClick={showSiderbar} />
       {sidebar && <Sidebar active={setSidebar} />}
-    </header>
+    </nav>
   );
 };
 
