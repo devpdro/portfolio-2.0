@@ -1,14 +1,16 @@
 import Header from "./components/layout/Header";
 import Navbar from "./components/layout/Navbar";
-import About from "./components/layout/About"
+import About from "./components/layout/About";
+import Skills from "./components/layout/Skills";
 
 function App() {
   return (
-    <div>
+    <main>
       <Navbar />
       <Header />
       <About />
-    </div>
+      <Skills />
+    </main>
   );
 }
 

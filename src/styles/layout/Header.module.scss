@@ -1,16 +1,15 @@
 .container {
-  max-width: 1080px;
+  max-width: 1280px;
   margin: 0 auto;
   .box_container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin-top: 3.7rem;
+    margin: 4rem 0 5rem 0;
     .text_box {
       font-family: "Montserrat", sans-serif;
       h2 {
-        font-size: 3.2rem;
-        color: #fff;
+        font-size: 2.2rem;
         span {
           text-align: center;
           display: block;
@@ -32,7 +31,6 @@
         padding-top: 1rem;
         display: flex;
         justify-content: center;
-        font-family: "Montserrat", sans-serif;
         .cv {
           background-color: #552686;
           border: none;
@@ -51,6 +49,37 @@
           color: #fff;
           border-radius: 15px;
           font-size: 1rem;
+        }
+      }
+    }
+    .img_box {
+      .img {
+        width: 400px;
+        background-color: #3b1a5e;
+        animation: border-transform 7s linear infinite;
+        @keyframes border-transform {
+          0%,
+          100% {
+            border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+          }
+          14% {
+            border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
+          }
+          28% {
+            border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%;
+          }
+          42% {
+            border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%;
+          }
+          56% {
+            border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%;
+          }
+          70% {
+            border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
+          }
+          84% {
+            border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
+          }
         }
       }
     }
