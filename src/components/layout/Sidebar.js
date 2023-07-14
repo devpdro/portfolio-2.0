@@ -1,39 +1,41 @@
 import React from "react";
 import styles from "../../styles/layout/Sidebar.module.scss";
-import {
-  FaTimes,
-  FaHome,
-  FaEnvelope,
-  FaRegSun,
-  FaUserAlt,
-  FaIdCardAlt,
-  FaRegFileAlt,
-  FaRegCalendarAlt,
-  FaChartBar,
-} from "react-icons/fa";
 
-import SidebarItem from "./SidebarItem";
+import { FaAdn, FaAngular } from "react-icons/fa";
 
-const Sidebar = ({ active }) => {
-  const closeSidebar = () => {
-    active(false);
-  };
-
+function Sidebar() {
   return (
-    <nav className={styles.container} style={{ left: active ? "0" : "-100%" }}>
-      <FaTimes onClick={closeSidebar} />
-      <div className={styles.content}>
-        <SidebarItem Icon={FaHome} Text="Home" />
-        <SidebarItem Icon={FaChartBar} Text="Statistics" />
-        <SidebarItem Icon={FaUserAlt} Text="Users" />
-        <SidebarItem Icon={FaEnvelope} Text="Mail" />
-        <SidebarItem Icon={FaRegCalendarAlt} Text="Calendar" />
-        <SidebarItem Icon={FaIdCardAlt} Text="Employees" />
-        <SidebarItem Icon={FaRegFileAlt} Text="Reports" />
-        <SidebarItem Icon={FaRegSun} Text="Settings" />
-      </div>
+    <nav id={styles.social_sidebar}>
+      <ul>
+        <li>
+          <a
+            href="https://twitter.com/m412c0b"
+            className="entypo-twitter"
+          >
+            <span>Twitter</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="http://dribbble.com/m412c0"
+            className="entypo-dribbble"
+          >
+            <FaAngular />
+            <span>dribbble</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="http://www.behance.net/m412c0"
+            className="entypo-behance"
+          >
+            <FaAdn />
+            <span>behance</span>
+          </a>
+        </li>
+      </ul>
     </nav>
   );
-};
+}
 
 export default Sidebar;
