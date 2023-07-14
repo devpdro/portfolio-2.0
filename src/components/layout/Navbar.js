@@ -3,7 +3,7 @@ import styles from "../../styles/layout/Navbar.module.scss";
 
 function Navbar() {
   return (
-    <div>
+    <>
       <input
         className={styles.menu_icon}
         type="checkbox"
@@ -15,23 +15,23 @@ function Navbar() {
       <nav className={styles.nav}>
         <ul className={styles.pt_5}>
           <li>
-            <a href="#a">Work</a>
+            <a href="#a">Início</a>
           </li>
           <li>
-            <a href="#a">Studio</a>
+            <a href="#a">Sobre</a>
           </li>
           <li>
-            <a href="a#">News</a>
+            <a href="a#">Habilidades</a>
           </li>
           <li>
-            <a href="#a">Contact</a>
+            <a href="#a">Certificações</a>
           </li>
         </ul>
       </nav>
       <div className={styles.section_center}>
-        <h1 class="mb-0">Portfólio</h1>
+        <h1>{"<"}Portfólio/{">"}</h1>
       </div>
-    </div>
+    </>
   );
 }
 
