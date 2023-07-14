@@ -1,6 +1,5 @@
 import styles from "../../styles/layout/Header.module.scss"
 
-
 function Header() {
   return (
     <header className={styles.container}>
