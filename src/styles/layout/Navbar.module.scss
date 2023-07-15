@@ -1,25 +1,13 @@
+@import "../../mixin.scss";
+@import "../../variables.scss";
+
 .section_center {
-  padding: 1.5rem 0 0 3rem;
-  margin: 0;
-  text-align: left;
+  padding: 1.5rem 0 1.5rem 3rem;
+  font-family: "Montserrat", sans-serif;
   h1 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 800;
-    background-clip: text;
-    background-image: linear-gradient(
-      135deg,
-      #c319f9,
-      #b81df8,
-      #992af5,
-      #8b30f4,
-      #6740f1,
-      #4548e0
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    font-size: 2rem;
-    padding-bottom: 1.5rem;
+    font-weight: 700;
+    @include background_gradient;
+    font-size: 1.9rem;
   }
 }
 
@@ -273,8 +261,8 @@
   }
   .nav {
     right: 30px;
-  }
-  .nav ul li a {
-    font-size: 8vh;
+    & ul li a {
+      font-size: 8vh;
+    }
   }
 }

@@ -1,25 +1,22 @@
+@import "../../variables.scss";
+
 .container {
-  max-width: 1080px;
+  max-width: 1280px;
   margin: 0 auto;
   .box_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5.8rem 0 6rem 0;
+    margin: 7.2rem 0 12rem 0;
+    padding: 0 14rem;
     .text_box {
-      padding: 0 8rem;
-      line-height: 1.9rem;
+      text-align: center;
+      line-height: 1.7rem;
+      font-family: "Montserrat", sans-serif;
       h1 {
-        text-align: center;
         font-size: 2rem;
-        font-family: "Montserrat", sans-serif;
       }
       p {
         padding-top: 0.8rem;
         color: #828282;
-        text-align: center;
-        font-size: 1.2rem;
-        font-family: "Montserrat", sans-serif;
+        font-size: 1.1rem;
       }
     }
   }
