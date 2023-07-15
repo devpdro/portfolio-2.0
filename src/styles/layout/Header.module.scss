@@ -1,19 +1,16 @@
 @import "../../mixin.scss";
 @import "../../variables.scss";
 
-
 .container {
   max-width: 1280px;
   margin: 0 auto;
   .box_container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 4rem 0 5rem 0;
+    @include center_between;
+    margin-top: 5rem;
     .text_box {
       font-family: "Montserrat", sans-serif;
       h2 {
-        font-size: 2.2rem;
+        font-size: 2rem;
         span {
           text-align: center;
           display: block;
@@ -22,26 +19,22 @@
       }
       div {
         padding-top: 1rem;
-        display: flex;
-        justify-content: center;
+        @include centralize_content;
         .cv {
-          background-color: #552686;
-          border: none;
-          outline: none;
-          margin-right: 1rem;
-          padding: 0.6rem 1.5rem;
-          color: #fff;
-          border-radius: 20px;
-          font-size: 1rem;
+          @include button;
+          margin-right: 1.1rem;
+          padding: 0.7rem 1.7rem;
+          border-radius: 25px;
+          font-size: 0.9rem;
         }
         .contact {
+          font-family: "Montserrat", sans-serif;
           background-color: transparent;
-          border: 1px solid #552686;
-          outline: none;
+          border: 2px solid #552686;
           padding: 0.6rem 1.5rem;
           color: #fff;
-          border-radius: 15px;
-          font-size: 1rem;
+          border-radius: 25px;
+          font-size: 0.9rem;
         }
       }
     }
@@ -49,31 +42,8 @@
       .img {
         width: 400px;
         background-color: #3b1a5e;
-        animation: border-transform 7s linear infinite;
-        @keyframes border-transform {
-          0%,
-          100% {
-            border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
-          }
-          14% {
-            border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
-          }
-          28% {
-            border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%;
-          }
-          42% {
-            border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%;
-          }
-          56% {
-            border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%;
-          }
-          70% {
-            border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
-          }
-          84% {
-            border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
-          }
-        }
+        padding: 1rem 1rem 0rem 1rem;
+        @include border_animation;
       }
     }
   }

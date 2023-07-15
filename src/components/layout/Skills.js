@@ -53,7 +53,7 @@ function Skills() {
               <FaReact className={styles.icon} />
             </div>
             <div className={styles.box}>
-              <h3>Sass</h3>
+              <h3>SASS</h3>
               <FaSass className={styles.icon} />
             </div>
             <div className={styles.box}>

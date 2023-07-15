@@ -29,7 +29,9 @@ function Navbar() {
         </ul>
       </nav>
       <div className={styles.section_center}>
-        <h1>{"<"}Portfólio/{">"}</h1>
+        <h1>
+          {"<"}Portfólio/{">"}
+        </h1>
       </div>
     </>
   );
