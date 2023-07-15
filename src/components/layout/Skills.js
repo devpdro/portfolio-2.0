@@ -54,7 +54,7 @@ function Skills() {
             </div>
             <div className={styles.box}>
               <h3>Sass</h3>
-              <FaSass className={styles.icon} />g
+              <FaSass className={styles.icon} />
             </div>
             <div className={styles.box}>
               <h3>Figma</h3>
