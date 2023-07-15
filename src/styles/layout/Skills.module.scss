@@ -1,0 +1,22 @@
+.reveal {
+    opacity: 0;
+  margin-bottom: 10rem;
+  transform: translateY(20px);
+  transition: opacity 0.6s, transform 0.6s;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fromLeft {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.6s, transform 0.6s;
+}
+
+.fromLeft.active {
+  opacity: 1;
+  transform: translateX(0);
+}
