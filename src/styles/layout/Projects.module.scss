@@ -1,0 +1,10 @@
+@import "../../mixin.scss";
+@import "../../variables.scss";
+
+.container {
+  font-family: "Montserrat", sans-serif;
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+}

@@ -1,13 +1,13 @@
+import React from "react";
+
+import styles from "../../styles/layout/Projects.module.scss";
+
 function Projects() {
   return (
-    <div>
-      <h1>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus
-        earum nesciunt sapiente pariatur obcaecati totam, nemo quisquam tenetur,
-        recusandae odio id doloribus, minus excepturi provident ad fugit ratione
-        quae magni.
-      </h1>
-    </div>
+    <section className={styles.container}>
+      <h1>Projetos</h1>
+      <div></div>
+    </section>
   );
 }
 
