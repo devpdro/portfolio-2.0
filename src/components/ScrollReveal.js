@@ -6,6 +6,7 @@ import VisibilitySensor from "react-visibility-sensor";
 
 import Skills from "./layout/Skills";
 import Projects from "./layout/Projects";
+import Contatc from "./layout/Contact";
 
 function ScrollReveal() {
   const handleVisibilityChange = (isVisible, index) => {
@@ -47,7 +48,9 @@ function ScrollReveal() {
         <div
           id="element-2"
           className={`${styles.box_container_skills} ${styles.fromLeft}`}
-        ></div>
+        >
+          <Contatc />
+        </div>
       </VisibilitySensor>
     </section>
   );

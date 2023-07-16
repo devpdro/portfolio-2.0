@@ -3,8 +3,58 @@
 
 .container {
   font-family: "Montserrat", sans-serif;
+  margin-bottom: 10rem;
   h1 {
     font-size: 2rem;
     text-align: center;
+  }
+  .box_container_projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+
+    .box {
+      margin: 0 1rem;
+      display: flex;
+      flex-direction: column;
+
+      .icons_box_container {
+        @include border_gradient;
+        background-color: #212121;
+        border-radius: 0 0 5px 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.4rem 0 0.3rem 0.4rem;
+
+        .box_icons {
+          .icon_react {
+            @include icon(#5ed3f3);
+          }
+          .icon_sass {
+            @include icon(#c66394);
+          }
+          .icon_vercel {
+            @include icon(#fff);
+          }
+        }
+
+        .input_box {
+          padding: 0.2rem 0.4rem 0.2rem 0;
+          input {
+            font-family: "Montserrat", sans-serif;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            background-color: #552686;
+            color: #fff;
+            border: none;
+            font-weight: 500;
+            outline: none;
+            padding: 0.4rem 1rem;
+          }
+        }
+      }
+    }
   }
 }

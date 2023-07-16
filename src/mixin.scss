@@ -12,6 +12,12 @@
   align-items: center;
 }
 
+@mixin icon ($color) {
+  font-size: 1.4rem;
+  margin-right: 0.3rem;
+  color: $color;
+}
+
 @mixin border_gradient {
   border-top: 3px solid;
   border-image: linear-gradient(
