@@ -1,7 +1,5 @@
 import styles from "../../styles/layout/Header.module.scss";
 
-import Image from "../../assets/post1.png";
-
 function Header() {
   return (
     <header className={styles.container}>
@@ -18,9 +16,6 @@ function Header() {
               value="Entrar em contato"
             />
           </div>
-        </div>
-        <div className={styles.img_box}>
-          <img className={styles.img} src={Image} alt="Foto minha" />
         </div>
       </div>
     </header>

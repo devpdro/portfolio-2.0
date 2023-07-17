@@ -5,12 +5,12 @@
   max-width: 1280px;
   margin: 0 auto;
   .box_container {
-    @include center_between;
-    margin-top: 5rem;
+    @include centralize_content;
+    margin-top: 13.4rem;
     .text_box {
       font-family: "Montserrat", sans-serif;
       h2 {
-        font-size: 2rem;
+        font-size: 4.2rem;
         span {
           text-align: center;
           display: block;
@@ -21,29 +21,30 @@
         padding-top: 1rem;
         @include centralize_content;
         .cv {
-          @include button;
+          @include button_gradient;
           margin-right: 1.1rem;
           padding: 0.7rem 1.7rem;
           border-radius: 25px;
           font-size: 0.9rem;
+          @include transition;
+          &:hover {
+            transform: scale(1.1);
+          }
         }
         .contact {
           font-family: "Montserrat", sans-serif;
           background-color: transparent;
-          border: 2px solid #552686;
+          border: 2px solid $color-secondary;
           padding: 0.6rem 1.5rem;
-          color: #fff;
+          color: $color-primary;
           border-radius: 25px;
           font-size: 0.9rem;
+          @include transition;
+          &:hover {
+            transform: scale(1.1);
+            background-color: $color-secondary;
+          }
         }
-      }
-    }
-    .img_box {
-      .img {
-        width: 400px;
-        background-color: #3b1a5e;
-        padding: 1rem 1rem 0rem 1rem;
-        @include border_animation;
       }
     }
   }

@@ -6,16 +6,51 @@
   align-items: center;
 }
 
+@mixin center_around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 @mixin center_between {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-@mixin icon ($color) {
-  font-size: 1.4rem;
-  margin-right: 0.3rem;
+@mixin title {
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+}
+
+@mixin transition {
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+@mixin icon($color) {
+  font-size: 1.8rem;
   color: $color;
+}
+
+@mixin icon_si($color) {
+  font-size: 1.8rem;
+  color: $color;
+}
+
+@mixin border_gradient_bottom {
+  border-bottom: 3px solid;
+  border-image: linear-gradient(
+      135deg,
+      #c319f9,
+      #b81df8,
+      #992af5,
+      #8b30f4,
+      #6740f1,
+      #4548e0
+    )
+    1;
 }
 
 @mixin border_gradient {
@@ -74,7 +109,7 @@
   }
 }
 
-@mixin button {
+@mixin button_gradient {
   font-family: "Montserrat", sans-serif;
   border: none;
   outline: none;

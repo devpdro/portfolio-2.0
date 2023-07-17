@@ -1,22 +1,40 @@
+@import "../../mixin.scss";
 @import "../../variables.scss";
 
 .container {
   max-width: 1280px;
   margin: 0 auto;
   .box_container {
-    margin: 9.4rem 0 10rem 0;
-    padding: 0 14rem;
+    margin: 17.4rem 0 14rem 0;
+    @include center_between;
     .text_box {
-      text-align: center;
       line-height: 1.7rem;
       font-family: "Montserrat", sans-serif;
+      padding: 0 1.5rem 0 1.5rem;
       h1 {
         font-size: 2rem;
+        span {
+          @include border_gradient_bottom;
+        }
       }
       p {
-        margin-top: 1.4rem;
-        color: #828282;
+        width: 680px;
+        margin-top: 2rem;
+        color: $color-paragraph;
         font-size: 1.2rem;
+      }
+    }
+    .img_box {
+      .img {
+        @include border_animation;
+        width: 380px;
+        background-color: $color-secondary;
+        padding: 1rem 1rem 0rem 1rem;
+        margin-right: 1.5rem;
+        transition: all 0.4s ease;
+        &:hover {
+          transform: scale(1.1);
+        }
       }
     }
   }

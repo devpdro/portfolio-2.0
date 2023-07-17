@@ -28,7 +28,7 @@ function Skills() {
           <BiLogoJavascript className={styles.icon} />
         </div>
         <div className={styles.box}>
-          <h3>React.js</h3>
+          <h3>React</h3>
           <FaReact className={styles.icon} />
         </div>
         <div className={styles.box}>
@@ -44,7 +44,7 @@ function Skills() {
           <SiStyledcomponents className={styles.icon} />
         </div>
         <div className={styles.box}>
-          <h3>Next.js</h3>
+          <h3>Next</h3>
           <SiNextdotjs className={styles.icon} />
         </div>
         <div className={styles.box}>
