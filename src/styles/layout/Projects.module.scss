@@ -40,58 +40,58 @@
         padding: 0.3rem 0 0.3rem 0.7rem;
         .box_icons {
           .icon_next {
-            @include icon(#5ed3f3);
+            @include icon($color-secondary);
             margin-right: 0.3rem;
             &:hover {
               @include icon_hover(#fff);
             }
           }
           .icon_react {
-            @include icon(#5ed3f3);
+            @include icon($color-secondary);
             &:hover {
               @include icon_hover(#5ed3f3);
             }
           }
           .icon_sass {
-            @include icon(#c76494);
+            @include icon($color-secondary);
             &:hover {
               @include icon_hover(#c76494);
             }
           }
           .icon_vercel {
-            @include icon(#fff);
+            @include icon($color-secondary);
             &:hover {
               @include icon_hover(#fff);
             }
           }
           .icon_netlify {
-            @include icon(#3aadbc);
+            @include icon($color-secondary);
             &:hover {
               @include icon_hover(#3aadbc);
             }
           }
           .icon_javascript {
-            @include icon(#efd81d);
+            @include icon($color-secondary);
             margin-right: 0.3rem;
             &:hover {
-              @include icon_hover(#efd81d);
+              @include icon_hover($color-secondary);
             }
           }
           .icon_bootstrap {
-            @include icon(#6c10ed);
+            @include icon($color-secondary);
             margin-right: 0.3rem;
             &:hover {
               @include icon_hover(#6c10ed);
             }
           }
           .icon_css {
-            @include icon(#0091d5);
+            @include icon($color-secondary);
             &:hover {
-              @include icon_hover(#0091d5);
+              @include icon_hover(#2D53E5);
             }
           }
           .icon_html {
-            @include icon(#dd4b25);
+            @include icon($color-secondary);
             &:hover {
               @include icon_hover(#dd4b25);
             }

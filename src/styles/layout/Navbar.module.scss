@@ -7,7 +7,7 @@
   h1 {
     font-weight: 700;
     @include background_gradient;
-    font-size: 1.9rem;
+    font-size: 2rem;
   }
 }
 
@@ -20,7 +20,7 @@
 .menu_icon:checked + label,
 .menu_icon:not(:checked) + label {
   position: fixed;
-  top: 30px;
+  top: 29px;
   right: 78px;
   display: block;
   width: 30px;
@@ -90,7 +90,7 @@
 .nav {
   @include border_animation;
   position: fixed;
-  top: 18px;
+  top: 17px;
   right: 65px;
   display: block;
   width: 57px;
@@ -181,30 +181,14 @@
   display: inline-block;
   position: relative;
   color: #ececee;
-  transition: all 250ms linear;
+  transition: all 0.2s ease;
+  text-decoration: none;
 }
 
 .nav ul li a:hover {
   text-decoration: none;
-  color: $color-quaternary;
-}
-
-.nav ul li a:after {
-  display: block;
-  position: absolute;
-  top: 50%;
-  content: "";
-  height: 2vh;
-  margin-top: -1vh;
-  width: 0;
-  left: 0;
-  background-color: #353746;
-  opacity: 0.8;
-  transition: width 250ms linear;
-}
-
-.nav ul li a:hover:after {
-  width: 100%;
+  transform: scale(1.1);
+  
 }
 
 .menu_icon:checked ~ .nav ul li {
@@ -240,14 +224,19 @@
 }
 
 @media screen and (max-width: 991px) {
+  .section_center {
+    h1 {
+      font-size: 2.1rem;
+    }
+  }
   .menu_icon:checked + label,
   .menu_icon:not(:checked) + label {
-    right: 55px;
+    right: 45px;
   }
   .nav {
     right: 30px;
     & ul li a {
-      font-size: 8vh;
+      font-size: 6vh;
     }
   }
 }

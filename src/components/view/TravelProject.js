@@ -37,7 +37,9 @@ function TravelProject() {
               alt="Imagem do projeto de viagens"
             />
             <div className={styles.text_box}>
-              <h1><span>TravelBeyo</span>nd</h1>{" "}
+              <h1>
+                <span>TravelBeyo</span>nd
+              </h1>{" "}
               <p>
                 TravelBeyond é uma plataforma que lhe mostrará as maravilhas da
                 África Ocidental, combinado com a poderosa tecnologia React e

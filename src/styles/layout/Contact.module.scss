@@ -20,7 +20,7 @@
       .box_icon {
         border-radius: 50%;
         .icon {
-          margin: 0.9rem 1.1rem;
+          margin: 0.9rem 1rem;
           font-size: 2.2rem;
           color: $color-quaternary;
         }
@@ -37,6 +37,18 @@
           color: $color-paragraph;
         }
       }
+    }
+  }
+}
+@media (max-width: 867px) {
+  .box_container_contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    .box_container_icon {
+      margin-bottom: 1rem;
     }
   }
 }

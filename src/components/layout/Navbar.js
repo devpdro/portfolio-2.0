@@ -36,7 +36,7 @@ function Navbar() {
       </nav>
       <div className={styles.section_center}>
         <h1>
-          {"<"}Portfólio/{">"}
+          <span>{"<"}</span>Portfólio/<span>{">"}</span>
         </h1>
       </div>
     </>
