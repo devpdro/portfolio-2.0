@@ -4,11 +4,11 @@ import Modal from "react-modal";
 import styles from "../../styles/ViewMore.module.scss";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 
-import TravelBeyond from "../../assets/travelBeyond.png";
+import Spotify from "../../assets/spotify.png";
 
 Modal.setAppElement("#root");
 
-function Travel() {
+function SpotifyProject() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const openModal = () => {
@@ -29,16 +29,17 @@ function Travel() {
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
       >
-        {/* Conteúdo do alerta */}
         <div className={styles.modal_content}>
           <div className={styles.box_container}>
             <img
               className={styles.img}
-              src={TravelBeyond}
-              alt="Imagem do projeto de viagens"
+              src={Spotify}
+              alt="Imagem do projeto, clone do spotify"
             />
             <div className={styles.text_box}>
-              <h1><span>TravelBeyo</span>nd</h1>{" "}
+              <h1>
+                <span>Spoti</span>fy
+              </h1>
               <p>
                 TravelBeyond é uma plataforma que lhe mostrará as maravilhas da
                 África Ocidental, combinado com a poderosa tecnologia React e
@@ -75,4 +76,4 @@ function Travel() {
   );
 }
 
-export default Travel;
+export default SpotifyProject;

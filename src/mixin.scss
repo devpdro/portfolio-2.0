@@ -36,12 +36,13 @@
 }
 
 @mixin icon($color) {
-  font-size: 1.8rem;
+  transition: all 0.3s ease;
+  font-size: 1.5rem;
+  margin-right: 0.2rem;
   color: $color;
 }
 
-@mixin icon_si($color) {
-  font-size: 1.8rem;
+@mixin icon_hover($color) {
   color: $color;
 }
 

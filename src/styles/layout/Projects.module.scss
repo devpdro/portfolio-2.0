@@ -37,40 +37,64 @@
         background-color: $color-tertiary;
         border-radius: 0 0 10px 10px;
         @include center_between;
-        padding: 0.4rem 0 0.3rem 0.7rem;
+        padding: 0.3rem 0 0.3rem 0.7rem;
         .box_icons {
           .icon_next {
-            @include icon($color-quaternary);
-            margin-right: 0.6rem;
-
+            @include icon(#5ed3f3);
+            margin-right: 0.3rem;
+            &:hover {
+              @include icon_hover(#fff);
+            }
           }
           .icon_react {
-            @include icon($color-quaternary);
-            margin-right: 0.6rem;
+            @include icon(#5ed3f3);
+            &:hover {
+              @include icon_hover(#5ed3f3);
+            }
           }
           .icon_sass {
-            @include icon($color-quaternary);
-            margin-right: 0.4rem;
+            @include icon(#c76494);
+            &:hover {
+              @include icon_hover(#c76494);
+            }
           }
           .icon_vercel {
-            @include icon($color-quaternary);
+            @include icon(#fff);
+            &:hover {
+              @include icon_hover(#fff);
+            }
           }
           .icon_netlify {
-            @include icon($color-quaternary);
+            @include icon(#3aadbc);
+            &:hover {
+              @include icon_hover(#3aadbc);
+            }
           }
           .icon_javascript {
-            @include icon_si($color-quaternary);
-            margin-right: 0.2rem;
+            @include icon(#efd81d);
+            margin-right: 0.3rem;
+            &:hover {
+              @include icon_hover(#efd81d);
+            }
           }
           .icon_bootstrap {
-            @include icon_si($color-quaternary);
-            margin-right: 0.2rem;
+            @include icon(#6c10ed);
+            margin-right: 0.3rem;
+            &:hover {
+              @include icon_hover(#6c10ed);
+            }
           }
           .icon_css {
-            @include icon_si($color-quaternary);
+            @include icon(#0091d5);
+            &:hover {
+              @include icon_hover(#0091d5);
+            }
           }
           .icon_html {
-            @include icon_si($color-quaternary);
+            @include icon(#dd4b25);
+            &:hover {
+              @include icon_hover(#dd4b25);
+            }
           }
         }
         .input_box {
@@ -87,8 +111,7 @@
             padding: 0.4rem 1rem;
             @include transition;
             &:hover {
-              transform: scale(0.9);
-              letter-spacing: 0.1rem;
+              transform: scale(1.1);
             }
           }
         }
