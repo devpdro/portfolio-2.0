@@ -28,6 +28,9 @@
         opacity: 1;
         transform: scale(1.2);
       }
+      .img {
+        height: 220px;
+      }
       .icons_box_container {
         margin-bottom: 2.2rem;
         @include border_gradient;
@@ -39,6 +42,7 @@
           .icon_next {
             @include icon($color-quaternary);
             margin-right: 0.6rem;
+
           }
           .icon_react {
             @include icon($color-quaternary);
@@ -84,6 +88,7 @@
             @include transition;
             &:hover {
               transform: scale(0.9);
+              letter-spacing: 0.1rem;
             }
           }
         }

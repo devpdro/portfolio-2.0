@@ -24,7 +24,13 @@ function Navbar() {
             <a href="a#">Habilidades</a>
           </li>
           <li>
+            <a href="#a">Projetos</a>
+          </li>
+          <li>
             <a href="#a">Certificações</a>
+          </li>
+          <li>
+            <a href="#a">Contatos</a>
           </li>
         </ul>
       </nav>

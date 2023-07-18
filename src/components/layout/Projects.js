@@ -13,11 +13,11 @@ import {
 import { SiNextdotjs, SiVercel } from "react-icons/si";
 
 import Pokemundi from "../../assets/pokemundi.png";
-import Travel from "../../assets/travel.png";
+import TravelBeyond from "../../assets/travelBeyond.png";
 import Finans from "../../assets/finans.png";
 import Spotify from "../../assets/spotify.png";
 import Foodies from "../../assets/foodies.png";
-import ViewMore from "../ViewMore";
+import Travel from "../view/Travel";
 
 function Projects() {
   return (
@@ -33,7 +33,7 @@ function Projects() {
             <div className={styles.box_icons}></div>
 
             <div className={styles.input_box}>
-              <ViewMore />
+              <Travel />
             </div>
           </div>
         </div>
@@ -43,17 +43,17 @@ function Projects() {
             <div className={styles.box_icons}></div>
 
             <div className={styles.input_box}>
-              <ViewMore />
+              <Travel />
             </div>
           </div>
         </div>
         <div className={styles.box}>
-          <img src={Travel} alt="imagem do projeto de viagens" />
+          <img className={styles.img} src={TravelBeyond} alt="imagem do projeto de viagens" />
           <div className={styles.icons_box_container}>
             <div className={styles.box_icons}></div>
 
             <div className={styles.input_box}>
-              <ViewMore />
+              <Travel />
             </div>
           </div>
         </div>
@@ -80,12 +80,12 @@ function Projects() {
               <SiVercel className={styles.icon_vercel} />
             </div>
             <div className={styles.input_box}>
-              <ViewMore />
+              <Travel />
             </div>
           </div>
         </div>
         <div className={styles.box}>
-          <img src={Travel} alt="Imagem do projeto de viagens" />
+          <img src={TravelBeyond} alt="Imagem do projeto de viagens" />
           <div className={styles.icons_box_container}>
             <div className={styles.box_icons}>
               <FaReact className={styles.icon_react} />
@@ -93,7 +93,7 @@ function Projects() {
               <SiVercel className={styles.icon_vercel} />
             </div>
             <div className={styles.input_box}>
-              <ViewMore />
+              <Travel />
             </div>
           </div>
         </div>
