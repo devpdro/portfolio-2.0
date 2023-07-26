@@ -44,25 +44,18 @@ function Bookworm() {
               <p>
                 O projeto consiste em um E-commerce de Livros, proporcionando
                 aos usuários uma experiência amigável e intuitiva para navegar
-                pela loja, cadastrar-se, adicionar itens ao carrinho e finalizar
-                suas compras.
+                pela loja.
               </p>
               <p>Algumas features que valem destacar:</p>
               <ul className={styles.list_text}>
-                <li>Sistema de cadastro usando o Firebase Authentication.</li>
+                <li>Sistema de cadastro</li>
+                <li>Carrinho de compras</li>
+                <li>Barra de pesquisa em tempo real</li>
                 <li>
-                  Carrinho de compras permitindo que os usuários adicionem
-                  livros e acompanhem a quantidade e preço total dos itens
-                  selecionados antes de finalizar a compra.
-                </li>
-                <li>
-                  Barra de pesquisa, ao digitar nela os resultados são exibidos
-                  em tempo real, sem a necessidade de recarregar a página.
-                </li>
-                <li>
-                  Integração da API do PayPal no processo de finalização da
+                  Integração da API do PayPal no processo da finalização da
                   compra.
                 </li>
+                <li>Envio de e-mail no formulário com validação</li>
               </ul>
               <div>
                 <a

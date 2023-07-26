@@ -34,11 +34,11 @@ function SpotifyProject() {
             <img
               className={styles.img}
               src={Spotify}
-              alt="Imagem do projeto, clone do spotify"
+              alt="Imagem do Projeto, Clone do Spotify"
             />
             <div className={styles.text_box}>
               <h1>
-                <span> Spotify Clo</span>ne
+                <span>Spotify Clo</span>ne
               </h1>
               <p>
                 O projeto foi desenvolvido há muito tempo, possui um layout

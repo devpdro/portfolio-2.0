@@ -8,7 +8,7 @@ import { SiStyledcomponents, SiNextdotjs, SiTailwindcss } from "react-icons/si";
 
 function Skills() {
   return (
-    <section className={styles.container}>
+    <section id="skills" className={styles.container}>
       <h1>Habilidades</h1>
       <div className={styles.box_skills}>
         <div className={styles.box}>

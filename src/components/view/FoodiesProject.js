@@ -34,7 +34,7 @@ function FoodiesProject() {
             <img
               className={styles.img}
               src={Foodies}
-              alt="Imagem do projeto do restaurante"
+              alt="Imagem do Projeto do Restaurante"
             />
             <div className={styles.text_box}>
               <h1>

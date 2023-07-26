@@ -34,7 +34,7 @@ function FinansProject() {
             <img
               className={styles.img}
               src={Finans}
-              alt="Imagem do projeto de finanças pessoais"
+              alt="Imagem do Projeto de Finanças Pessoais"
             />
             <div className={styles.text_box}>
               <h1>

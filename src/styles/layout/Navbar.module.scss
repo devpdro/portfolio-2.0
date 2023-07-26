@@ -1,242 +1,149 @@
 @import "../../mixin.scss";
 @import "../../variables.scss";
 
-.section_center {
-  padding: 1.5rem 0 1.5rem 3rem;
-  font-family: "Montserrat", sans-serif;
-  h1 {
-    font-weight: 700;
-    @include background_gradient;
-    font-size: 2rem;
+@mixin breakpoint($point) {
+  @if $point == md {
+    @media (min-width: 48em) {
+      @content;
+    }
   }
 }
-
-[type="checkbox"]:checked,
-[type="checkbox"]:not(:checked) {
-  position: absolute;
-  left: -9999px;
-}
-
-.menu_icon:checked + label,
-.menu_icon:not(:checked) + label {
+.navbar {
+  @include breakpoint(md) {
+    padding: 0 3rem;
+  }
   position: fixed;
-  top: 29px;
-  right: 78px;
-  display: block;
-  width: 30px;
-  height: 30px;
-  padding: 0;
-  margin: 0;
-  cursor: pointer;
-  z-index: 10;
-}
-
-.menu_icon:checked + label:before,
-.menu_icon:not(:checked) + label:before {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 30px;
-  height: 20px;
-  z-index: 20;
   top: 0;
-  left: 0;
-  border-top: 2px solid $color-primary;
-  border-bottom: 2px solid $color-primary;
-  transition: border-width 100ms 1500ms ease,
-    top 100ms 1600ms cubic-bezier(0.23, 1, 0.32, 1),
-    height 100ms 1600ms cubic-bezier(0.23, 1, 0.32, 1),
-    background-color 200ms ease, transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.menu_icon:checked + label:after,
-.menu_icon:not(:checked) + label:after {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 22px;
-  height: 2px;
-  z-index: 20;
-  top: 11px;
-  right: 4px;
-  background-color: $color-primary;
-  margin-top: -1px;
-  transition: width 100ms 1750ms ease, right 100ms 1750ms ease,
-    margin-top 100ms ease, transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.menu_icon:checked + label:before {
-  top: 10px;
-  transform: rotate(45deg);
-  height: 2px;
-  background-color: $color-primary;
-  border-width: 0;
-  transition: border-width 100ms 340ms ease,
-    top 100ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
-    height 100ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
-    background-color 200ms 500ms ease,
-    transform 200ms 1700ms cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.menu_icon:checked + label:after {
-  width: 30px;
-  margin-top: 0;
-  right: 0;
-  transform: rotate(-45deg);
-  transition: width 100ms ease, right 100ms ease, margin-top 100ms 500ms ease,
-    transform 200ms 1700ms cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.nav {
-  @include border_animation;
-  position: fixed;
-  top: 17px;
-  right: 65px;
-  display: block;
-  width: 57px;
-  height: 51px;
-  padding: 0;
-  margin: 0;
-  z-index: 9;
-  overflow: hidden;
-  box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.3);
-  background-color: $color-quaternary;
-  transition: top 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1),
-    right 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1),
-    transform 250ms 1100ms ease,
-    width 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1),
-    height 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.menu_icon:checked ~ .nav {
-  animation-play-state: paused;
-  top: 50%;
-  right: 50%;
-  transform: translate(50%, -50%);
-  width: 200%;
-  height: 200%;
-  transition: top 350ms 700ms cubic-bezier(0.23, 1, 0.32, 1),
-    right 350ms 700ms cubic-bezier(0.23, 1, 0.32, 1), transform 250ms 700ms ease,
-    width 750ms 1000ms cubic-bezier(0.23, 1, 0.32, 1),
-    height 750ms 1000ms cubic-bezier(0.23, 1, 0.32, 1);
-}
-.nav ul {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  display: block;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  z-index: 6;
-  text-align: center;
-  transform: translateY(-50%);
-  list-style: none;
-}
-
-.nav ul li {
-  position: relative;
-  display: block;
-  width: 100%;
-  padding: 0;
-  margin: 10px 0;
-  text-align: center;
-  list-style: none;
-  pointer-events: none;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(30px);
-  transition: all 250ms linear;
-}
-.nav ul li:nth-child(1) {
-  transition-delay: 300ms;
-}
-
-.nav ul li:nth-child(2) {
-  transition-delay: 250ms;
-}
-
-.nav ul li:nth-child(3) {
-  transition-delay: 200ms;
-}
-
-.nav ul li:nth-child(4) {
-  transition-delay: 150ms;
-}
-
-.nav ul li:nth-child(5) {
-  transition-delay: 100ms;
-}
-
-.nav ul li:nth-child(6) {
-  transition-delay: 50ms;
-}
-
-.nav ul li a {
+  z-index: 1;
   font-family: "Montserrat", sans-serif;
-  font-size: 8vh;
-  text-transform: uppercase;
-  line-height: 1.2;
-  font-weight: 800;
-  display: inline-block;
-  position: relative;
-  color: #ececee;
-  transition: all 0.2s ease;
-  text-decoration: none;
-}
-
-.nav ul li a:hover {
-  text-decoration: none;
-  transform: scale(1.1);
-  
-}
-
-.menu_icon:checked ~ .nav ul li {
-  pointer-events: auto;
-  visibility: visible;
-  opacity: 1;
-  transform: translateY(0);
-  transition: opacity 350ms ease, transform 250ms ease;
-}
-
-.menu_icon:checked ~ .nav ul li:nth-child(1) {
-  transition-delay: 1400ms;
-}
-
-.menu_icon:checked ~ .nav ul li:nth-child(2) {
-  transition-delay: 1480ms;
-}
-
-.menu_icon:checked ~ .nav ul li:nth-child(3) {
-  transition-delay: 1560ms;
-}
-
-.menu_icon:checked ~ .nav ul li:nth-child(4) {
-  transition-delay: 1640ms;
-}
-
-.menu_icon:checked ~ .nav ul li:nth-child(5) {
-  transition-delay: 1720ms;
-}
-
-.menu_icon:checked ~ .nav ul li:nth-child(6) {
-  transition-delay: 1800ms;
-}
-
-@media screen and (max-width: 991px) {
-  .section_center {
-    h1 {
-      font-size: 2.1rem;
+  background-color: $background-color;
+  border-bottom: 2px solid $color-secondary;
+  height: 100px;
+  width: 100%;
+  padding: 0 1.5rem;
+  transition: 0.3s ease all;
+  .header__content {
+    @include center_between;
+    overflow: hidden;
+    color: $color-primary;
+    margin: 0 auto;
+    max-width: 1920px;
+    height: 100%;
+    position: relative;
+    z-index: 100;
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: $color-primary;
+    }
+    &__nav {
+      @include breakpoint(md) {
+        transform: none;
+        flex-direction: row;
+        background: transparent;
+        width: auto;
+        height: 100%;
+        position: static;
+      }
+      @include centralize_content;
+      top: 0;
+      right: 100%;
+      bottom: 0;
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      flex-direction: column;
+      text-align: center;
+      background: rgba($background-color, 0.9);
+      backdrop-filter: blur(2px);
+      transform: translate(0);
+      transition: 0.3s ease transform;
+      ul {
+        @include breakpoint(md) {
+          flex-direction: row;
+          align-items: center;
+          margin-bottom: 0;
+          margin-right: calc(0.5rem + #{16px});
+        }
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 32px;
+        li {
+          &:not(:last-child) {
+            margin-bottom: 1.2rem;
+            @include breakpoint(md) {
+              margin-bottom: 0;
+              margin-right: 16px;
+            }
+          }
+          .link {
+            color: $color-primary;
+            position: relative;
+            text-decoration: none;
+            font-family: "Poppins", sans-serif;
+            font-size: 1.1rem;
+            padding: 0.3rem 0.2rem;
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+            &::before {
+              content: "";
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              height: 3px;
+              transform: scaleX(0);
+              transform-origin: left;
+              transition: transform 0.3s ease-out;
+              background-image: linear-gradient(
+                to left,
+                $color-secondary,
+                $color-quaternary
+              );
+            }
+            &:hover::before {
+              transform: scaleX(1);
+            }
+          }
+        }
+      }
+      &.isMenu {
+        transform: translate(100%);
+      }
+    }
+    .header__content__toggle {
+      @include transition;
+      display: flex;
+      align-items: center;
+      font-size: 2rem;
+      position: relative;
+      &:hover {
+        transform: scale(1.1);
+      }
+      @include breakpoint(md) {
+        display: none;
+      }
     }
   }
-  .menu_icon:checked + label,
-  .menu_icon:not(:checked) + label {
-    right: 45px;
-  }
-  .nav {
-    right: 30px;
-    & ul li a {
-      font-size: 6vh;
+}
+@media screen and (max-width: 1280px) {
+  .navbar {
+    @include breakpoint(md) {
+      padding: 0 3rem;
     }
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    font-family: "Montserrat", sans-serif;
+    background-color: $background-color;
+    border-bottom: 2px solid $color-secondary;
+    height: 80px;
+    width: 100%;
+    padding: 0 1.5rem;
+    transition: 0.3s ease all;
   }
 }

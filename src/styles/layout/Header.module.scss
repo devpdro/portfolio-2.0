@@ -6,7 +6,7 @@
   margin: 0 auto;
   .box_container {
     @include centralize_content;
-    margin-top: 13.4rem;
+    margin-top: 20.4rem;
     .text_box {
       font-family: "Montserrat", sans-serif;
       h2 {
@@ -55,7 +55,7 @@
     padding: 0 1rem;
     h2 {
       text-align: center;
-      font-size: 3.2rem!important;
+      font-size: 3.2rem !important;
     }
   }
 }
@@ -64,7 +64,7 @@
     margin-bottom: 5rem;
     h2 {
       text-align: center;
-      font-size: 3.5rem!important;
+      font-size: 3.5rem !important;
     }
   }
 }

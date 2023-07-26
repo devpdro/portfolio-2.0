@@ -28,7 +28,7 @@ import BookwormProject from "../view/BookwormProject"
 
 function Projects() {
   return (
-    <section className={styles.container}>
+    <section id="projects" className={styles.container}>
       <h1>Projetos</h1>
       <h2>
         <span>Destaqu</span>es
@@ -43,7 +43,7 @@ function Projects() {
               <SiVercel className={styles.icon_vercel} />
             </div>
             <div className={styles.input_box}>
-              <BookwormProject />
+              <BookwormProject/>
             </div>
           </div>
         </div>

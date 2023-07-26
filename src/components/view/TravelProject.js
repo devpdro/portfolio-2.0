@@ -34,7 +34,7 @@ function TravelProject() {
             <img
               className={styles.img}
               src={TravelBeyond}
-              alt="Imagem do projeto de viagens"
+              alt="Imagem do Projeto de Viagens"
             />
             <div className={styles.text_box}>
               <h1>

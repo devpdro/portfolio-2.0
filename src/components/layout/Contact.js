@@ -7,7 +7,7 @@ import { SlSocialLinkedin } from "react-icons/sl";
 
 function Contact() {
   return (
-    <footer className={styles.container}>
+    <footer id="contact" className={styles.container}>
       <h1>Contatos</h1>
       <div className={styles.box_container_contact}>
         <a

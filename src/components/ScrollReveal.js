@@ -7,7 +7,8 @@ import VisibilitySensor from "react-visibility-sensor";
 import Skills from "./layout/Skills";
 import Projects from "./layout/Projects";
 import Contatc from "./layout/Contact";
-import About from "./layout/About"
+import About from "./layout/About";
+
 function ScrollReveal() {
   const handleVisibilityChange = (isVisible, index) => {
     const element = document.querySelector(`#element-${index}`);
@@ -27,7 +28,7 @@ function ScrollReveal() {
         onChange={(isVisible) => handleVisibilityChange(isVisible, 0)}
       >
         <div id="element-0" className={` ${styles.fromLeft}`}>
-    <About />
+          <About />
         </div>
       </VisibilitySensor>
       <VisibilitySensor

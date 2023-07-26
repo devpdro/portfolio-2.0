@@ -4,11 +4,13 @@ import Image from "../../assets/post1.png";
 
 function About() {
   return (
-    <section className={styles.box}>
+    <section id="about" className={styles.box}>
       <div className={styles.container}>
         <div className={styles.box_container}>
           <div className={styles.text_box}>
-            <h1><span>Sobre mi</span>m</h1>
+            <h1>
+              <span>Sobre mi</span>m
+            </h1>
             <p>
               Meu nome é Victor Hugo Pedro, atualmente estou cursando Ciência da
               Computação, apaixonado por tecnologia, especialmente em
