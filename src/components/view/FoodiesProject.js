@@ -41,31 +41,38 @@ function FoodiesProject() {
                 <span>Foodi</span>es
               </h1>
               <p>
-                TravelBeyond é uma plataforma que lhe mostrará as maravilhas da
-                África Ocidental, combinado com a poderosa tecnologia React e
-                com a versatilidade do JSON simulando uma API.
+                O projeto Foddies é uma representação visual de um restaurante,
+                criado com o objetivo de explorar conceitos de design e
+                experiência do usuário.
               </p>
               <p>
-                Através da simulação de uma API, cada imagem vai ser selecionada
-                e exibida com detalhes, permitindo que você tenha uma visão
-                autêntica de cada destino.
-              </p>
-              <p>
-                Explore as fotografias deslumbrantes e deixe sua imaginação voar
-                enquanto você se transporta para os lugares mais da África
-                Ocidental.
+                Embora seja um projeto fictício, foi desenvolvido com paixão e
+                atenção aos detalhes para transmitir uma atmosfera acolhedora e
+                qualidade que você esperaria encontrar em um restaurante real.
               </p>
               <div>
-                <input
-                  className={styles.btn}
-                  type="submit"
-                  value="Acessar projeto"
-                />
-                <input
-                  className={styles.btn}
-                  type="submit"
-                  value="Acessar repositório"
-                />
+                <a
+                  href="https://projeto-food-two.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <input
+                    className={styles.btn}
+                    type="submit"
+                    value="Acessar projeto"
+                  />
+                </a>
+                <a
+                  href="https://github.com/devpdro/project-foodies"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <input
+                    className={styles.btn}
+                    type="submit"
+                    value="Acessar repositório"
+                  />
+                </a>
               </div>
             </div>
           </div>

@@ -15,7 +15,8 @@
     }
   }
   .box_container_projects {
-    @include centralize_content;
+    display: flex;
+    align-items: center;
     flex-wrap: wrap;
     .box {
       margin: 0 1.2rem;
@@ -40,61 +41,34 @@
         padding: 0.3rem 0 0.3rem 0.7rem;
         .box_icons {
           .icon_next {
-            @include icon($color-secondary);
+            @include icon(#fff);
             margin-right: 0.3rem;
-            &:hover {
-              @include icon_hover(#fff);
-            }
           }
           .icon_react {
-            @include icon($color-secondary);
-            &:hover {
-              @include icon_hover(#5ed3f3);
-            }
+            @include icon(#5ed3f3);
           }
           .icon_sass {
-            @include icon($color-secondary);
-            &:hover {
-              @include icon_hover(#c76494);
-            }
+            @include icon(#c76494);
           }
           .icon_vercel {
-            @include icon($color-secondary);
-            &:hover {
-              @include icon_hover(#fff);
-            }
+            @include icon(#fff);
           }
           .icon_netlify {
-            @include icon($color-secondary);
-            &:hover {
-              @include icon_hover(#3aadbc);
-            }
+            @include icon(#3aadbc);
           }
           .icon_javascript {
-            @include icon($color-secondary);
+            @include icon(#efd81d);
             margin-right: 0.3rem;
-            &:hover {
-              @include icon_hover($color-secondary);
-            }
           }
           .icon_bootstrap {
-            @include icon($color-secondary);
+            @include icon(#6c10ed);
             margin-right: 0.3rem;
-            &:hover {
-              @include icon_hover(#6c10ed);
-            }
           }
           .icon_css {
-            @include icon($color-secondary);
-            &:hover {
-              @include icon_hover(#2D53E5);
-            }
+            @include icon(#2d53e5);
           }
           .icon_html {
-            @include icon($color-secondary);
-            &:hover {
-              @include icon_hover(#dd4b25);
-            }
+            @include icon(#dd4b25);
           }
         }
         .input_box {

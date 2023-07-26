@@ -34,38 +34,46 @@ function PokemundiProject() {
             <img
               className={styles.img}
               src={Pokemundi}
-              alt="Imagem do projeto de pokemons"
+              alt="Imagem do Projeto de Pokemons"
             />
             <div className={styles.text_box}>
               <h1>
                 <span>Pokemun</span>di
               </h1>
               <p>
-                TravelBeyond é uma plataforma que lhe mostrará as maravilhas da
-                África Ocidental, combinado com a poderosa tecnologia React e
-                com a versatilidade do JSON simulando uma API.
+                O projeto consiste em um aplicação interativa e responsiva
+                desenvolvida com Next.js, uma estrutura de React para criação de
+                páginas renderizadas no lado do servidor (SSR) e na
+                pré-renderização.
               </p>
               <p>
-                Através da simulação de uma API, cada imagem vai ser selecionada
-                e exibida com detalhes, permitindo que você tenha uma visão
-                autêntica de cada destino.
-              </p>
-              <p>
-                Explore as fotografias deslumbrantes e deixe sua imaginação voar
-                enquanto você se transporta para os lugares mais da África
-                Ocidental.
+                O objetivo é fornecer aos usuários informações detalhadas sobre
+                diferentes espécies de Pokémon por meio da integração com uma
+                API Pokémon.
               </p>
               <div>
-                <input
-                  className={styles.btn}
-                  type="submit"
-                  value="Acessar projeto"
-                />
-                <input
-                  className={styles.btn}
-                  type="submit"
-                  value="Acessar repositório"
-                />
+                <a
+                  href="https://pokemundi-project.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <input
+                    className={styles.btn}
+                    type="submit"
+                    value="Acessar projeto"
+                  />
+                </a>
+                <a
+                  href="https://github.com/devpdro/pokemundi-project"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <input
+                    className={styles.btn}
+                    type="submit"
+                    value="Acessar repositório"
+                  />
+                </a>
               </div>
             </div>
           </div>

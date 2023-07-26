@@ -23,6 +23,8 @@ import PokemundiProject from "../view/PokemundiProject";
 import FoodiesProject from "../view/FoodiesProject";
 import SpotifyProject from "../view/SpotifyProject";
 import FinansProject from "../view/FinansProject";
+import Bookworm from "../../assets/bookworm.png";
+import BookwormProject from "../view/BookwormProject"
 
 function Projects() {
   return (
@@ -33,24 +35,16 @@ function Projects() {
       </h2>
       <div className={styles.box_container_projects}>
         <div className={styles.box}>
-          <img className={styles.img} alt="" />
+          <img src={Bookworm} alt="Imagem do Projeto de Livros" />
           <div className={styles.icons_box_container}>
-            <div className={styles.box_icons}></div>
-            <div className={styles.input_box}></div>
-          </div>
-        </div>
-        <div className={styles.box}>
-          <img className={styles.img} alt="" />
-          <div className={styles.icons_box_container}>
-            <div className={styles.box_icons}></div>
-            <div className={styles.input_box}></div>
-          </div>
-        </div>
-        <div className={styles.box}>
-          <img className={styles.img} alt="" />
-          <div className={styles.icons_box_container}>
-            <div className={styles.box_icons}></div>
-            <div className={styles.input_box}></div>
+            <div className={styles.box_icons}>
+              <SiReact className={styles.icon_react} />
+              <SiSass className={styles.icon_sass} />
+              <SiVercel className={styles.icon_vercel} />
+            </div>
+            <div className={styles.input_box}>
+              <BookwormProject />
+            </div>
           </div>
         </div>
       </div>
@@ -59,14 +53,7 @@ function Projects() {
       </h2>
       <div className={styles.box_container_projects}>
         <div className={styles.box}>
-          <img className={styles.img} alt="" />
-          <div className={styles.icons_box_container}>
-            <div className={styles.box_icons}></div>
-            <div className={styles.input_box}></div>
-          </div>
-        </div>
-        <div className={styles.box}>
-          <img src={Pokemundi} alt="" />
+          <img src={Pokemundi} alt="Imagem do Projeto de Pokemons" />
           <div className={styles.icons_box_container}>
             <div className={styles.box_icons}>
               <SiNextdotjs className={styles.icon_next} />
@@ -79,7 +66,7 @@ function Projects() {
           </div>
         </div>
         <div className={styles.box}>
-          <img src={TravelBeyond} alt="Imagem do projeto de viagens" />
+          <img src={TravelBeyond} alt="Imagem do Projeto de Viagens" />
           <div className={styles.icons_box_container}>
             <div className={styles.box_icons}>
               <SiReact className={styles.icon_react} />
@@ -92,7 +79,7 @@ function Projects() {
           </div>
         </div>
         <div className={styles.box}>
-          <img src={Foodies} alt="Imagem do projeto de restaurante" />
+          <img src={Foodies} alt="Imagem do Projeto de Restaurante" />
           <div className={styles.icons_box_container}>
             <div className={styles.box_icons}>
               <SiHtml5 className={styles.icon_html} />
@@ -107,7 +94,7 @@ function Projects() {
           </div>
         </div>
         <div className={styles.box}>
-          <img src={Spotify} alt="Imagem do projeto spotify" />
+          <img src={Spotify} alt="Imagem do Projeto Spotify" />
           <div className={styles.icons_box_container}>
             <div className={styles.box_icons}>
               <SiHtml5 className={styles.icon_html} />
@@ -121,7 +108,7 @@ function Projects() {
           </div>
         </div>
         <div className={styles.box}>
-          <img src={Finans} alt="Imagem do projeto de finanças pessoais" />
+          <img src={Finans} alt="Imagem do Projeto de Finanças Pessoais" />
           <div className={styles.icons_box_container}>
             <div className={styles.box_icons}>
               <SiHtml5 className={styles.icon_html} />

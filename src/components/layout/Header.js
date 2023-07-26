@@ -10,11 +10,17 @@ function Header() {
           </h2>
           <div>
             <input className={styles.cv} type="submit" value="Donwload CV" />
-            <input
-              className={styles.contact}
-              type="submit"
-              value="Entrar em contato"
-            />
+            <a
+              href="https://api.whatsapp.com/send?phone=5519996776847"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <input
+                className={styles.contact}
+                type="submit"
+                value="Entrar em contato"
+              />
+            </a>
           </div>
         </div>
       </div>

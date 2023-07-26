@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import Modal from "react-modal";
 
 import styles from "../../styles/ViewMore.module.scss";
+
 import { AiOutlineCloseCircle } from "react-icons/ai";
 
-import Finans from "../../assets/finans.png";
+import Image from "../../assets/bookworm.png";
 
 Modal.setAppElement("#root");
 
-function FinansProject() {
+function Bookworm() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const openModal = () => {
@@ -33,22 +34,39 @@ function FinansProject() {
           <div className={styles.box_container}>
             <img
               className={styles.img}
-              src={Finans}
-              alt="Imagem do projeto de finanças pessoais"
+              src={Image}
+              alt="Imagem do Projeto de Livros"
             />
             <div className={styles.text_box}>
               <h1>
-                <span>Fina</span>ns
+                <span>Bookwo</span>rm
               </h1>
               <p>
-                O projeto Finans foi desenvolvido há muito tempo, tem um layout
-                estático e visualmente agradável. Com grafismos e cores
-                harmoniosos, criei este projeto com o intuito de aprimorar
-                minhas habilidades na tecnologia Bootstrap.
+                O projeto consiste em um E-commerce de Livros, proporcionando
+                aos usuários uma experiência amigável e intuitiva para navegar
+                pela loja, cadastrar-se, adicionar itens ao carrinho e finalizar
+                suas compras.
               </p>
+              <p>Algumas features que valem destacar:</p>
+              <ul className={styles.list_text}>
+                <li>Sistema de cadastro usando o Firebase Authentication.</li>
+                <li>
+                  Carrinho de compras permitindo que os usuários adicionem
+                  livros e acompanhem a quantidade e preço total dos itens
+                  selecionados antes de finalizar a compra.
+                </li>
+                <li>
+                  Barra de pesquisa, ao digitar nela os resultados são exibidos
+                  em tempo real, sem a necessidade de recarregar a página.
+                </li>
+                <li>
+                  Integração da API do PayPal no processo de finalização da
+                  compra.
+                </li>
+              </ul>
               <div>
                 <a
-                  href="https://marvelous-monstera-96229f.netlify.app/"
+                  href="https://ecommerce-project-livid-chi.vercel.app/"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -59,7 +77,7 @@ function FinansProject() {
                   />
                 </a>
                 <a
-                  href="https://github.com/devpdro/project-finans"
+                  href="https://github.com/devpdro/ecommerce-project"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -79,4 +97,4 @@ function FinansProject() {
   );
 }
 
-export default FinansProject;
+export default Bookworm;

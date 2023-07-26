@@ -17,9 +17,10 @@
     .box_container {
       display: flex;
       align-items: flex-start;
+      
       .img {
         background-position: center center;
-        width: 630px;
+        width: 56%;
         height: 490px;
         margin: 0.5rem 0 0.5rem 0.5rem;
       }
@@ -27,6 +28,13 @@
         margin: 1rem 3rem;
         color: $color-secondary;
         font-family: "Montserrat", sans-serif;
+        .list_text {
+          text-decoration: none;
+          li {
+            color: $color-paragraph;
+            padding-bottom: 0.4rem;
+          }
+        }
         h1 {
           letter-spacing: 0.1rem;
           font-size: 2rem;

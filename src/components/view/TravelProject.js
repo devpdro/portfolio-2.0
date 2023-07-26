@@ -56,16 +56,28 @@ function TravelProject() {
                 Ocidental.
               </p>
               <div>
-                <input
-                  className={styles.btn}
-                  type="submit"
-                  value="Acessar projeto"
-                />
-                <input
-                  className={styles.btn}
-                  type="submit"
-                  value="Acessar repositório"
-                />
+                <a
+                  href="https://travel-beyond-project.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <input
+                    className={styles.btn}
+                    type="submit"
+                    value="Acessar projeto"
+                  />
+                </a>
+                <a
+                  href="https://github.com/devpdro/travel-beyond-project"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <input
+                    className={styles.btn}
+                    type="submit"
+                    value="Acessar repositório"
+                  />
+                </a>
               </div>
             </div>
           </div>
