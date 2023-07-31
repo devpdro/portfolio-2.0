@@ -66,7 +66,7 @@ function Contact() {
             </div>
             <div className={styles.box_text}>
               <h5>E-mail</h5>
-              <p>victorpedr879@gmail.com</p>
+              <p>victorh.pedr@gmail.com</p>
             </div>
           </div>
         </a>
