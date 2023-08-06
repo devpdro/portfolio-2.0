@@ -11,20 +11,23 @@ import {
   SiSass,
 } from "react-icons/si";
 import { BsFillBootstrapFill } from "react-icons/bs";
-import { BiLogoNetlify } from "react-icons/bi";
+import { BiLogoNetlify, BiLogoFirebase } from "react-icons/bi";
+import { SiStyledcomponents } from "react-icons/si";
 
 import Pokemundi from "../../assets/pokemundi.png";
 import TravelBeyond from "../../assets/travelBeyond.png";
 import Finans from "../../assets/finans.png";
 import Spotify from "../../assets/spotify.png";
 import Foodies from "../../assets/foodies.png";
+import Play from "../../assets/playtv.png"
 import TravelProject from "../view/TravelProject";
 import PokemundiProject from "../view/PokemundiProject";
 import FoodiesProject from "../view/FoodiesProject";
 import SpotifyProject from "../view/SpotifyProject";
 import FinansProject from "../view/FinansProject";
 import Bookworm from "../../assets/bookworm.png";
-import BookwormProject from "../view/BookwormProject"
+import BookwormProject from "../view/BookwormProject";
+import PlayTv from "../view/PlayTvProject";
 
 function Projects() {
   return (
@@ -38,16 +41,33 @@ function Projects() {
           <img src={Bookworm} alt="Imagem do Projeto de Livros" />
           <div className={styles.icons_box_container}>
             <div className={styles.box_icons}>
-              <SiReact className={styles.icon_react} />
               <SiSass className={styles.icon_sass} />
+              <SiReact className={styles.icon_react} />
+              <SiJavascript className={styles.icon_javascript} />
+              <BiLogoFirebase className={styles.icon_firebase}/>
               <SiVercel className={styles.icon_vercel} />
             </div>
             <div className={styles.input_box}>
-              <BookwormProject/>
+              <BookwormProject />
+            </div>
+          </div>
+        </div>
+        <div className={styles.box}>
+          <img src={Play} alt="Imagem do Projeto de Filmes" />
+          <div className={styles.icons_box_container}>
+            <div className={styles.box_icons}>
+              <SiStyledcomponents className={styles.icon_styled} />
+              <SiReact className={styles.icon_react} />
+              <SiJavascript className={styles.icon_javascript} />
+              <SiVercel className={styles.icon_vercel} />
+            </div>
+            <div className={styles.input_box}>
+              <PlayTv />
             </div>
           </div>
         </div>
       </div>
+
       <h2>
         <span>Todos os proje</span>tos
       </h2>
@@ -56,8 +76,9 @@ function Projects() {
           <img src={Pokemundi} alt="Imagem do Projeto de Pokemons" />
           <div className={styles.icons_box_container}>
             <div className={styles.box_icons}>
-              <SiNextdotjs className={styles.icon_next} />
               <SiSass className={styles.icon_sass} />
+              <SiNextdotjs className={styles.icon_next} />
+              <SiJavascript className={styles.icon_javascript} />
               <SiVercel className={styles.icon_vercel} />
             </div>
             <div className={styles.input_box}>
@@ -69,8 +90,9 @@ function Projects() {
           <img src={TravelBeyond} alt="Imagem do Projeto de Viagens" />
           <div className={styles.icons_box_container}>
             <div className={styles.box_icons}>
-              <SiReact className={styles.icon_react} />
               <SiSass className={styles.icon_sass} />
+              <SiReact className={styles.icon_react} />
+              <SiJavascript className={styles.icon_javascript} />
               <SiVercel className={styles.icon_vercel} />
             </div>
             <div className={styles.input_box}>

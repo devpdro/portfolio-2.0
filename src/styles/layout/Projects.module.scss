@@ -19,6 +19,7 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+
     .box {
       margin: 0 1.2rem;
       padding: 0 1rem;
@@ -32,7 +33,7 @@
         transform: scale(1.2);
       }
       .img {
-        height: 220px;
+        z-index: 1;
       }
       .icons_box_container {
         margin-bottom: 2.2rem;
@@ -42,6 +43,14 @@
         @include center_between;
         padding: 0.3rem 0 0.3rem 0.7rem;
         .box_icons {
+          .icon_firebase {
+            @include icon(#ffcd32);
+            margin-right: 0.3rem;
+          }
+          .icon_styled {
+            @include icon(#e48e84);
+            margin-right: 0.3rem;
+          }
           .icon_next {
             @include icon(#fff);
             margin-right: 0.3rem;
