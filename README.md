@@ -16,4 +16,6 @@ My portfólio was developed using the following technologies:
 - JavaScript
 - Vercel (hosting platform)
 
+<hr>
+
 Made with ❤️ by Victor Hugo 👋
