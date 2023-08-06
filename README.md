@@ -1,6 +1,6 @@
 # Portfólio 💼
 
-![Alt text](src/assets/readme/portfolio.png)
+![Portfólio](src/assets/readme/portfolio.png)
 You can access it with this [link.](https://updated-portfolio-project.vercel.app/)
 
 # 💻 About the portfólio
