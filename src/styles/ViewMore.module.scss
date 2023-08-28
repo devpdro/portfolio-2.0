@@ -14,14 +14,14 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     height: 550px;
     border: 1px solid $color-quaternary;
-    max-width: 1280px;
+    max-width: 1080px;
     position: relative;
     .box_container {
       display: flex;
       align-items: flex-start;
       .img {
         background-position: center center;
-        width: 54%;
+        width: 150%;
         height: 490px;
         margin: 0.5rem 0 0.5rem 0.5rem;
       }

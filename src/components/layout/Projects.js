@@ -41,28 +41,14 @@ function Projects() {
           <img src={Bookworm} alt="Imagem do Projeto de Livros" />
           <div className={styles.icons_box_container}>
             <div className={styles.box_icons}>
-              <SiSass className={styles.icon_sass} />
               <SiReact className={styles.icon_react} />
               <SiJavascript className={styles.icon_javascript} />
               <BiLogoFirebase className={styles.icon_firebase}/>
+              <SiSass className={styles.icon_sass} />
               <SiVercel className={styles.icon_vercel} />
             </div>
             <div className={styles.input_box}>
               <BookwormProject />
-            </div>
-          </div>
-        </div>
-        <div className={styles.box}>
-          <img src={Play} alt="Imagem do Projeto de Filmes" />
-          <div className={styles.icons_box_container}>
-            <div className={styles.box_icons}>
-              <SiStyledcomponents className={styles.icon_styled} />
-              <SiReact className={styles.icon_react} />
-              <SiJavascript className={styles.icon_javascript} />
-              <SiVercel className={styles.icon_vercel} />
-            </div>
-            <div className={styles.input_box}>
-              <PlayTv />
             </div>
           </div>
         </div>
@@ -72,13 +58,28 @@ function Projects() {
         <span>Todos os proje</span>tos
       </h2>
       <div className={styles.box_container_projects}>
+      <div className={styles.box}>
+          <img src={Play} alt="Imagem do Projeto de Filmes" />
+          <div className={styles.icons_box_container}>
+            <div className={styles.box_icons}>
+              <SiReact className={styles.icon_react} />
+              <SiJavascript className={styles.icon_javascript} />
+              <SiStyledcomponents className={styles.icon_styled} />
+              <SiVercel className={styles.icon_vercel} />
+            </div>
+            <div className={styles.input_box}>
+              <PlayTv />
+            </div>
+          </div>
+        </div>
         <div className={styles.box}>
           <img src={Pokemundi} alt="Imagem do Projeto de Pokemons" />
           <div className={styles.icons_box_container}>
             <div className={styles.box_icons}>
-              <SiSass className={styles.icon_sass} />
+              <SiReact className={styles.icon_react} />
               <SiNextdotjs className={styles.icon_next} />
               <SiJavascript className={styles.icon_javascript} />
+              <SiSass className={styles.icon_sass} />
               <SiVercel className={styles.icon_vercel} />
             </div>
             <div className={styles.input_box}>
@@ -90,9 +91,9 @@ function Projects() {
           <img src={TravelBeyond} alt="Imagem do Projeto de Viagens" />
           <div className={styles.icons_box_container}>
             <div className={styles.box_icons}>
-              <SiSass className={styles.icon_sass} />
               <SiReact className={styles.icon_react} />
               <SiJavascript className={styles.icon_javascript} />
+              <SiSass className={styles.icon_sass} />
               <SiVercel className={styles.icon_vercel} />
             </div>
             <div className={styles.input_box}>
