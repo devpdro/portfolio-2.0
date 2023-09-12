@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
-
 import styles from "../../presentation/styles/view-more.module.scss";
 import { AiOutlineCloseCircle } from "react-icons/ai";
-
-import Foodies from "../../presentation/assets/foodies.png";
+import { projectsData } from "../../main/data/data";
 
 Modal.setAppElement("#root");
 
@@ -21,6 +19,9 @@ function FoodiesProject() {
     document.body.style.overflow = "auto";
   };
 
+
+  const project = projectsData.find((project) => project.title === "Foodies");
+
   return (
     <div>
       <input type="submit" value="Ver mais" onClick={openModal}></input>
@@ -33,45 +34,20 @@ function FoodiesProject() {
           <div className={styles.box_container}>
             <img
               className={styles.img}
-              src={Foodies}
-              alt="Imagem do Projeto do Restaurante"
+              src={project.imgSrc}
+              alt={`Imagem do Projeto ${project.title}`}
             />
             <div className={styles.text_box}>
               <h1>
-                <span>Foodi</span>es
+                <span>{project.title}</span>
               </h1>
-              <p>
-                O projeto Foddies é uma representação visual de um restaurante,
-                criado com o objetivo de explorar conceitos de design e
-                experiência do usuário.
-              </p>
-              <p>
-                Embora seja um projeto fictício, foi desenvolvido com paixão e
-                atenção aos detalhes para transmitir uma atmosfera acolhedora e
-                qualidade que você esperaria encontrar em um restaurante real.
-              </p>
+              <p>{project.description}</p>
               <div>
-                <a
-                  href="https://projeto-food-two.vercel.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <input
-                    className={styles.btn}
-                    type="submit"
-                    value="Acessar projeto"
-                  />
+                <a href={project.projectLink} target="_blank" rel="noreferrer">
+                  <input className={styles.btn} type="submit" value="Acessar projeto" />
                 </a>
-                <a
-                  href="https://github.com/devpdro/project-foodies"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <input
-                    className={styles.btn}
-                    type="submit"
-                    value="Acessar repositório"
-                  />
+                <a href={project.repositoryLink} target="_blank" rel="noreferrer">
+                  <input className={styles.btn} type="submit" value="Acessar repositório" />
                 </a>
               </div>
             </div>
