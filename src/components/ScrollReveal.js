@@ -1,13 +1,13 @@
 import React from "react";
 
-import styles from "../styles/ScrollReveal.module.scss";
+import styles from "../styles/scroll-reveal.module.scss";
 
 import VisibilitySensor from "react-visibility-sensor";
 
-import Skills from "./layout/Skills";
-import Projects from "./layout/Projects";
-import Contatc from "./layout/Contact";
-import About from "./layout/About";
+import Skills from "../presentation/components/layout/skills";
+import Projects from "../presentation/components/layout/projects";
+import Contatc from "../presentation/components/layout/contact";
+import About from "../presentation/components/layout/about";
 
 function ScrollReveal() {
   const handleVisibilityChange = (isVisible, index) => {

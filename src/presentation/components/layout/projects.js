@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../styles/layout/Projects.module.scss";
+import styles from "./projects.module.scss";
 
 import {
   SiNextdotjs,
@@ -20,14 +20,14 @@ import Finans from "../../assets/finans.png";
 import Spotify from "../../assets/spotify.png";
 import Foodies from "../../assets/foodies.png";
 import Play from "../../assets/playtv.png"
-import TravelProject from "../view/TravelProject";
-import PokemundiProject from "../view/PokemundiProject";
-import FoodiesProject from "../view/FoodiesProject";
-import SpotifyProject from "../view/SpotifyProject";
-import FinansProject from "../view/FinansProject";
+import TravelProject from "../../../components/view/TravelProject";
+import PokemundiProject from "../../../components/view/PokemundiProject";
+import FoodiesProject from "../../../components/view/FoodiesProject";
+import SpotifyProject from "../../../components/view/SpotifyProject";
+import FinansProject from "../../../components/view/FinansProject";
 import Bookworm from "../../assets/bookworm.png";
-import BookwormProject from "../view/BookwormProject";
-import PlayTv from "../view/PlayTvProject";
+import BookwormProject from "../../../components/view/BookwormProject";
+import PlayTv from "../../../components/view/PlayTvProject";
 
 function Projects() {
   return (

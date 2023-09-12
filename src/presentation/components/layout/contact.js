@@ -1,4 +1,4 @@
-import styles from "../../styles/layout/Contact.module.scss";
+import styles from "./contact.module.scss";
 
 import { FaWhatsapp } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";

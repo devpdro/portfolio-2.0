@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
 
-import styles from "../../styles/ViewMore.module.scss";
+import styles from "../../styles/view-more.module.scss";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 
-import Pokemundi from "../../assets/pokemundi.png";
+import Pokemundi from "../../presentation/assets/pokemundi.png";
 
 Modal.setAppElement("#root");
 

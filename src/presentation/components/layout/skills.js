@@ -1,12 +1,12 @@
 import React from "react";
 
-import styles from "../../styles/layout/Skills.module.scss";
+import styles from "./skills.module.scss";
+
 import { AiFillHtml5 } from "react-icons/ai";
 import { BsGit} from "react-icons/bs";
-import { GrMysql } from "react-icons/gr";
 import { FaCss3Alt, FaReact, FaSass, FaFigma } from "react-icons/fa";
-import { BiLogoJavascript, BiLogoBootstrap, BiLogoTypescript, BiLogoNodejs} from "react-icons/bi";
-import { SiStyledcomponents, SiNextdotjs, SiTailwindcss, SiRedux, SiStrapi, SiStorybook, SiExpress} from "react-icons/si";
+import { BiLogoJavascript, BiLogoBootstrap, BiLogoTypescript} from "react-icons/bi";
+import { SiStyledcomponents, SiNextdotjs, SiTailwindcss, SiRedux} from "react-icons/si";
 
 function Skills() {
   return (
@@ -64,26 +64,6 @@ function Skills() {
         <div className={styles.box}>
           <h3>Redux</h3>
           <SiRedux className={styles.icon} />
-        </div>
-        <div className={styles.box}>
-          <h3>Strapi</h3>
-          <SiStrapi className={styles.icon} />
-        </div>
-        <div className={styles.box}>
-          <h3>Storybook</h3>
-          <SiStorybook className={styles.icon} />
-        </div>
-        <div className={styles.box}>
-          <h3>Node.js</h3>
-          <BiLogoNodejs className={styles.icon} />
-        </div>
-        <div className={styles.box}>
-          <h3>Express.js</h3>
-          <SiExpress className={styles.icon} />
-        </div>
-        <div className={styles.box}>
-          <h3>Mysql</h3>
-          <GrMysql className={styles.icon} />
         </div>
       </div>
     </section>

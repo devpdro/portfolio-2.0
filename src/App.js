@@ -1,5 +1,5 @@
-import Header from "./components/layout/Header";
-import Navbar from "./components/layout/Navbar";
+import Header from "./presentation/components/layout/header";
+import Navbar from "./presentation/components/layout/navbar";
 import ScrollReveal from "./components/ScrollReveal";
 
 import { Helmet } from "react-helmet";

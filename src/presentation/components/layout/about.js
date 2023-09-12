@@ -1,4 +1,4 @@
-import styles from "../../styles/layout/About.module.scss";
+import styles from "./about.module.scss";
 
 import Image from "../../assets/post1.png";
 

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
-import styles from "../../styles/layout/Navbar.module.scss";
+import styles from "./navbar.module.scss";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);

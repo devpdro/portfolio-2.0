@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
 
-import styles from "../../styles/ViewMore.module.scss";
+import styles from "../../styles/view-more.module.scss";
 
 import { AiOutlineCloseCircle } from "react-icons/ai";
 
-import Image from "../../assets/bookworm.png";
+import Image from "../../presentation/assets/bookworm.png";
 
 Modal.setAppElement("#root");
 
