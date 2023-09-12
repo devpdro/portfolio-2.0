@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from "../styles/scroll-reveal.module.scss";
+import styles from "../presentation/styles/scroll-reveal.module.scss";
 
 import VisibilitySensor from "react-visibility-sensor";
 

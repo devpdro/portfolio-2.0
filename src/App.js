@@ -1,6 +1,6 @@
 import Header from "./presentation/components/layout/header";
 import Navbar from "./presentation/components/layout/navbar";
-import ScrollReveal from "./components/ScrollReveal";
+import ScrollReveal from "./utils/scroll-reveal";
 
 import { Helmet } from "react-helmet";
 
