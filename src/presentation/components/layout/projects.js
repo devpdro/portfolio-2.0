@@ -25,8 +25,8 @@ import PokemundiProject from "../../../components/view/PokemundiProject";
 import FoodiesProject from "../../../components/view/FoodiesProject";
 import SpotifyProject from "../../../components/view/SpotifyProject";
 import FinansProject from "../../../components/view/FinansProject";
-import Bookworm from "../../assets/bookworm.png";
-import BookwormProject from "../../../components/view/BookwormProject";
+import BookwormImg from "../../assets/bookworm.png";
+import Bookworm from "../../../components/view/BookwormProject";
 import PlayTv from "../../../components/view/PlayTvProject";
 
 function Projects() {
@@ -38,7 +38,7 @@ function Projects() {
       </h2>
       <div className={styles.box_container_projects}>
         <div className={styles.box}>
-          <img src={Bookworm} alt="Imagem do Projeto de Livros" />
+          <img src={BookwormImg} alt="Imagem do Projeto de Livros" />
           <div className={styles.icons_box_container}>
             <div className={styles.box_icons}>
               <SiReact className={styles.icon_react} />
@@ -48,7 +48,7 @@ function Projects() {
               <SiVercel className={styles.icon_vercel} />
             </div>
             <div className={styles.input_box}>
-              <BookwormProject />
+              <Bookworm />
             </div>
           </div>
         </div>

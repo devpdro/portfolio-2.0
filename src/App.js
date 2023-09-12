@@ -10,6 +10,7 @@ function App() {
       <Helmet>
         <title>Victor | Portfólio</title>
       </Helmet>
+
       <Navbar />
       <Header />
       <ScrollReveal />
