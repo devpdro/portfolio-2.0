@@ -1,6 +1,8 @@
 import React from "react";
-import styles from "./projects.module.scss";
 
+import { Link } from "react-router-dom";
+
+import styles from "./projects.module.scss";
 import {
   SiNextdotjs,
   SiVercel,
@@ -20,14 +22,7 @@ import Finans from "../../assets/finans.png";
 import Spotify from "../../assets/spotify.png";
 import Foodies from "../../assets/foodies.png";
 import Play from "../../assets/playtv.png"
-import TravelProject from "../../../components/view/TravelProject";
-import PokemundiProject from "../../../components/view/PokemundiProject";
-import FoodiesProject from "../../../components/view/FoodiesProject";
-import SpotifyProject from "../../../components/view/SpotifyProject";
-import FinansProject from "../../../components/view/FinansProject";
-import BookwormImg from "../../assets/bookworm.png";
-import Bookworm from "../../../components/view/BookwormProject";
-import PlayTv from "../../../components/view/PlayTvProject";
+import Bookworm from "../../assets/bookworm.png";
 
 function Projects() {
   return (
@@ -38,7 +33,7 @@ function Projects() {
       </h2>
       <div className={styles.box_container_projects}>
         <div className={styles.box}>
-          <img src={BookwormImg} alt="Imagem do Projeto de Livros" />
+          <img src={Bookworm} alt="Imagem do Projeto de Livros" />
           <div className={styles.icons_box_container}>
             <div className={styles.box_icons}>
               <SiReact className={styles.icon_react} />
@@ -48,16 +43,18 @@ function Projects() {
               <SiVercel className={styles.icon_vercel} />
             </div>
             <div className={styles.input_box}>
-              <Bookworm />
+            <Link to="/bookworm"> <input type="submit" className={styles.input_box} /></Link>
             </div>
           </div>
         </div>
       </div>
 
-      <h2>
-        <span>Todos os proje</span>tos
-      </h2>
+                            <h2>
+                              <span>Todos os proje</span>tos
+                            </h2>
+
       <div className={styles.box_container_projects}>
+
       <div className={styles.box}>
           <img src={Play} alt="Imagem do Projeto de Filmes" />
           <div className={styles.icons_box_container}>
@@ -68,10 +65,10 @@ function Projects() {
               <SiVercel className={styles.icon_vercel} />
             </div>
             <div className={styles.input_box}>
-              <PlayTv />
+            <Link to="/play-tv"> <input type="submit" className={styles.input_box} /></Link>
             </div>
           </div>
-        </div>
+          </div>
         <div className={styles.box}>
           <img src={Pokemundi} alt="Imagem do Projeto de Pokemons" />
           <div className={styles.icons_box_container}>
@@ -83,7 +80,7 @@ function Projects() {
               <SiVercel className={styles.icon_vercel} />
             </div>
             <div className={styles.input_box}>
-              <PokemundiProject />
+            <Link to="/pokemundi"> <input type="submit" className={styles.input_box} /></Link>
             </div>
           </div>
         </div>
@@ -97,7 +94,7 @@ function Projects() {
               <SiVercel className={styles.icon_vercel} />
             </div>
             <div className={styles.input_box}>
-              <TravelProject />
+            <Link to="/travel-beyond"> <input type="submit" className={styles.input_box} /></Link>
             </div>
           </div>
         </div>
@@ -112,7 +109,7 @@ function Projects() {
               <SiVercel className={styles.icon_vercel} />
             </div>
             <div className={styles.input_box}>
-              <FoodiesProject />
+            <Link to="/foodies"> <input type="submit" className={styles.input_box} /></Link>
             </div>
           </div>
         </div>
@@ -126,7 +123,7 @@ function Projects() {
               <BiLogoNetlify className={styles.icon_netlify} />
             </div>
             <div className={styles.input_box}>
-              <SpotifyProject />
+            <Link to="/spotify"> <input type="submit" className={styles.input_box} /></Link>
             </div>
           </div>
         </div>
@@ -140,7 +137,7 @@ function Projects() {
               <BiLogoNetlify className={styles.icon_netlify} />
             </div>
             <div className={styles.input_box}>
-              <FinansProject />
+            <Link to="/finans"> <input type="submit" className={styles.input_box} /></Link>
             </div>
           </div>
         </div>

@@ -5,7 +5,7 @@ import styles from "../../presentation/styles/view-more.module.scss";
 import { projectsData } from "../../main/data/data";
 
 function Bookworm() {
-  const bookwormProject = projectsData.find((project) => project.title === "Baookworm");
+  const bookwormProject = projectsData.find((project) => project.title === "Bookworm");
 
   if (!bookwormProject) {
     return <div>Projeto "Bookworm" não encontrado.</div>;
