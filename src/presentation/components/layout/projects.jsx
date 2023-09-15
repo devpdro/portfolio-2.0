@@ -16,13 +16,13 @@ import { BsFillBootstrapFill } from "react-icons/bs";
 import { BiLogoNetlify, BiLogoFirebase } from "react-icons/bi";
 import { SiStyledcomponents } from "react-icons/si";
 
-import Pokemundi from "../../assets/pokemundi.png";
-import TravelBeyond from "../../assets/travelBeyond.png";
-import Finans from "../../assets/finans.png";
-import Spotify from "../../assets/spotify.png";
-import Foodies from "../../assets/foodies.png";
-import Play from "../../assets/playtv.png"
-import Bookworm from "../../assets/bookworm.png";
+import Pokemundi from "../../assets/img/pokemundi.png";
+import TravelBeyond from "../../assets/img/travelBeyond.png";
+import Finans from "../../assets/img/finans.png";
+import Spotify from "../../assets/img/spotify.png";
+import Foodies from "../../assets/img/foodies.png";
+import Play from "../../assets/img/playtv.png"
+import Bookworm from "../../assets/img/bookworm.png";
 
 function Projects() {
   return (

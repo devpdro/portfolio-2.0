@@ -1,6 +1,6 @@
 import styles from "./header.module.scss";
 
-import Curriculo from "../../../presentation/assets/curriculo.pdf";
+import Curriculo from "../../../presentation/assets/pdf/curriculo.pdf";
 
 function Header() {
   return (

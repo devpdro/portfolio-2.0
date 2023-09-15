@@ -1,10 +1,10 @@
-import Bookworm from "../../presentation/assets/bookworm.png";
-import Foodies from "../../presentation/assets/foodies.png";
-import Finans from "../../presentation/assets/finans.png";
-import Spotify from "../../presentation/assets/spotify.png";
-import Pokemundi from "../../presentation/assets/pokemundi.png";
-import Play from "../../presentation/assets/playtv.png";
-import TravelBeyond from "../../presentation/assets/travelBeyond.png";
+import Bookworm from "../../presentation/assets/img/bookworm.png";
+import Foodies from "../../presentation/assets/img/foodies.png";
+import Finans from "../../presentation/assets/img/finans.png";
+import Spotify from "../../presentation/assets/img/spotify.png";
+import Pokemundi from "../../presentation/assets/img/pokemundi.png";
+import Play from "../../presentation/assets/img/playtv.png";
+import TravelBeyond from "../../presentation/assets/img/travelBeyond.png";
 
 export const projectsData = [
     {

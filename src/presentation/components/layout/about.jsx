@@ -1,6 +1,6 @@
 import styles from "./about.module.scss";
 
-import Image from "../../assets/post1.png";
+import Image from "../../assets/img/me.png";
 
 function About() {
   return (
