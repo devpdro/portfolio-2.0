@@ -43,6 +43,20 @@
         @include center_between;
         padding: 0.3rem 0 0.3rem 0.7rem;
         .box_icons {
+          .icon_typescript {
+            @include icon(#2F74C0);
+          }
+          .icon_node {
+            @include icon(#71A861);
+          }
+          .icon_express {
+            @include icon(#727A82);
+            margin-right: 0.3rem;
+          }
+          .icon_stripe {
+            @include icon(#6772E5);
+            margin-right: 0.3rem;
+          }
           .icon_firebase {
             @include icon(#ffcd32);
             margin-right: 0.3rem;

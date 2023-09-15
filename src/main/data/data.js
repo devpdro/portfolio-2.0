@@ -5,6 +5,7 @@ import Spotify from "../../presentation/assets/img/spotify.png";
 import Pokemundi from "../../presentation/assets/img/pokemundi.png";
 import Play from "../../presentation/assets/img/playtv.png";
 import TravelBeyond from "../../presentation/assets/img/travelBeyond.png";
+import AutoLuxury from "../../presentation/assets/img/autoluxury.png";
 
 export const projectsData = [
     {
@@ -20,6 +21,19 @@ export const projectsData = [
       ],
       projectLink: "https://ecommerce-project-livid-chi.vercel.app/",
       repositoryLink: "https://github.com/devpdro/ecommerce-project",
+    },
+    {
+      title: "Auto Luxury",
+      imgSrc: AutoLuxury, 
+      description:
+        "O projeto gira em torno de uma plataforma de reserva de carros de luxo, oferecendo aos usuários uma experiência simples e fácil de usar para explorar a frota, selecionar os veículos desejados para reserva e finalizar suas reservas.",
+      features: [
+        "Experiência do usuário aprimorada, isso garante que os usuários possam navegar na plataforma sem esforço, visualizar informações detalhadas do carro e concluir suas reservas sem complicações.",
+        "Filtragem de carros, uma funcionalidade de pesquisa que permite aos usuários filtrar carros por marca, ano e cor.",
+        "Integração com Stripe API, para fornecer um método de pagamento seguro e conveniente.",
+      ],  
+      projectLink: "https://auto-luxury-project.vercel.app",
+      repositoryLink: "https://github.com/devpdro/auto-luxury-project",
     },
     {
       title: "PlayTV",
@@ -38,7 +52,7 @@ export const projectsData = [
       repositoryLink: "https://github.com/devpdro/pokemundi-project",
     },
     {
-      title: "TravelBeyond",
+      title: "Travel Beyond",
       imgSrc: TravelBeyond,
       description:
         "TravelBeyond é uma plataforma excepcional que desvendará as espetaculares maravilhas da África Ocidental. Esta jornada incrível é possível graças à fusão da poderosa tecnologia React com a versatilidade do JSON, simulando uma API.",

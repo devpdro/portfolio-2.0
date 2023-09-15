@@ -18,6 +18,7 @@ import PlayTv from "./presentation/pages/play-tv";
 import Pokemundi from "./presentation/pages/pokemundi";
 import SpotifyClone from "./presentation/pages/spotify";
 import TravelBeyond from "./presentation/pages/travel-beyond";
+import AutoLuxury from "./presentation/pages/auto-luxury";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -32,6 +33,7 @@ root.render(
         <Route path="/pokemundi" element={<Pokemundi />} />
         <Route path="/spotify" element={<SpotifyClone/>} />
         <Route path="/travel-beyond" element={<TravelBeyond />} />
+        <Route path="/auto-luxury" element={<AutoLuxury />} />
 
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>

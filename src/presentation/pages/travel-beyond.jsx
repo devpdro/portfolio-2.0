@@ -8,11 +8,11 @@ import { projectsData } from "../../main/data/data";
 
 function TravelBeyond() {
   const travelBeyondProject = projectsData.find(
-    (project) => project.title === "TravelBeyond"
+    (project) => project.title === "Travel Beyond"
   );
-  
+
   if (!travelBeyondProject) {
-    return <div>Projeto "TravelBeyond" não encontrado.</div>;
+    return <div>Projeto "Travel Beyond" não encontrado.</div>;
   }
 
   return (
@@ -71,13 +71,14 @@ function TravelBeyond() {
           <div>
             <iframe
               className={styles.box_video}
+              style={{ border: "3px solid #8b30f4" }}
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/T9qLoDryFeM?rel=0"
+              src="https://www.youtube.com/embed/8KL1y0N4xJY?si=i1MVn-vhvr9LcmqK?rel=0"
               title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              style={{ border: "3px solid #8b30f4" }}
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
             ></iframe>
           </div>
         </div>

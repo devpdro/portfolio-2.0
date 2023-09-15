@@ -10,7 +10,7 @@ function Pokemundi() {
   const pokemundiProject = projectsData.find(
     (project) => project.title === "Pokemundi"
   );
-  
+
   if (!pokemundiProject) {
     return <div>Projeto "Pokemundi" não encontrado.</div>;
   }
@@ -70,14 +70,15 @@ function Pokemundi() {
         <div className={styles.container_video}>
           <div>
             <iframe
-              className={styles.box_video}
+            className={styles.box_video}
+            style={{ border: "3px solid #8b30f4" }}
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/T9qLoDryFeM?rel=0"
+              src="https://www.youtube.com/embed/IPf267lll50?si=g0z4foSB255Gimh3"
               title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              style={{ border: "3px solid #8b30f4" }}
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
             ></iframe>
           </div>
         </div>
