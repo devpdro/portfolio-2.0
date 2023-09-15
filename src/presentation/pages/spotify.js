@@ -19,7 +19,7 @@ function SpotifyClone() {
           src={spotifyCloneProject.imgSrc}
           alt={`Imagem do Projeto ${spotifyCloneProject.title}`}
         />
-        <div className={styles.text_box}>
+        <div className={styles.text_box}a>
           <h1>
             <span>{spotifyCloneProject.title}</span>
           </h1>
