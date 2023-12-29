@@ -64,24 +64,8 @@ function AutoLuxury() {
             <p>{autoLuxuryProject.description}</p>
             {autoLuxuryProject.features ? (
               <div className={styles.features}>
-                <p>
-                  Algumas <span>features</span> que valem destacar:
-                </p>
-                <ul className={styles.list_text}>
-                  {autoLuxuryProject.features.map((feature, index) => (
-                    <li key={index}>{feature}</li>
-                  ))}
-                </ul>
               </div>
             ) : null}
-          </div>
-        </div>
-        <h1 className={styles.title_video}>
-          <span>Víd</span>eo
-        </h1>
-        <div className={styles.container_video}>
-          <div>
-          <iframe className={styles.box_video} style={{ border: "3px solid #8b30f4" }} width="560" height="315" src="https://www.youtube.com/embed/i8l3TkP99ds?si=K66XIuIekj5eYV_6?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
         </div>
       </div>

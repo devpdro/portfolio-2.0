@@ -64,24 +64,6 @@ function Pokemundi() {
             <p>{pokemundiProject.description}</p>
           </div>
         </div>
-        <h1 className={styles.title_video}>
-          <span>Víd</span>eo
-        </h1>
-        <div className={styles.container_video}>
-          <div>
-            <iframe
-            className={styles.box_video}
-            style={{ border: "3px solid #8b30f4" }}
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/IPf267lll50?si=g0z4foSB255Gimh3"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </div>
       </div>
     </main>
   );

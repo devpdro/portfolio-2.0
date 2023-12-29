@@ -6,13 +6,21 @@ import Pokemundi from "../../presentation/assets/img/pokemundi.png";
 import Play from "../../presentation/assets/img/playtv.png";
 import TravelBeyond from "../../presentation/assets/img/travelBeyond.png";
 import AutoLuxury from "../../presentation/assets/img/autoluxury.png";
+import Pesqueiro from "../../presentation/assets/img/pesqueiro.png";
 
 export const projectsData = [
+  {
+      title: "Pesqueiro",
+      imgSrc: Pesqueiro,
+      description:
+        "Como desenvolvedor, destaco a criação do site do Pesqueiro do Cirino, oferecendo uma experiência online envolvente para amantes da pesca. O projeto destaca-se por um layout intuitivo, uma galeria de fotos atrativa que captura a essência do local e um design responsivo, garantindo acessibilidade em diversos dispositivos.",
+      projectLink: "https://pesqueirocirino.com/",
+    },
     {
       title: "Bookworm",
       imgSrc: Bookworm,
       description:
-        "O projeto consiste em um E-commerce de Livros, proporcionando aos usuários uma experiência amigável e intuitiva para navegar pela loja.",
+        "O projeto consiste em um e-commerce de livros, proporcionando aos usuários uma experiência amigável e intuitiva para navegar pela loja. Algumas features que valem a pena destacar: Integração da API do PayPal no processo da finalização da compra, envio de e-mail no formulário com validação, barra de pesquisa em tempo real, sistema de cadastro e carrinho de compras.",
       features: [
         "Integração da API do PayPal no processo da finalização da compra.",
         "Envio de e-mail no formulário com validação",
@@ -26,7 +34,7 @@ export const projectsData = [
       title: "Auto Luxury",
       imgSrc: AutoLuxury, 
       description:
-        "O projeto gira em torno de uma plataforma de reserva de carros de luxo, oferecendo aos usuários uma experiência simples e fácil de usar para explorar a frota, selecionar os veículos desejados para reserva e finalizar suas reservas.",
+        "O projeto gira em torno de uma plataforma de reserva de carros de luxo, oferecendo aos usuários uma experiência simples e fácil de usar para explorar a frota com a pesquisa, selecionar os veículos desejados para reserva e finalizar suas reservas.",
       features: [
         "Experiência do usuário aprimorada, isso garante que os usuários possam navegar na plataforma sem esforço, visualizar informações detalhadas do carro e concluir suas reservas sem complicações.",
         "Filtragem de carros, uma funcionalidade de pesquisa que permite aos usuários filtrar carros por marca, ano e cor.",

@@ -64,33 +64,8 @@ function Bookworm() {
             <p>{bookwormProject.description}</p>
             {bookwormProject.features ? (
               <div className={styles.features}>
-                <p>
-                  Algumas <span>features</span> que valem destacar:
-                </p>
-                <ul className={styles.list_text}>
-                  {bookwormProject.features.map((feature, index) => (
-                    <li key={index}>{feature}</li>
-                  ))}
-                </ul>
               </div>
             ) : null}
-          </div>
-        </div>
-        <h1 className={styles.title_video}>
-          <span>Víd</span>eo
-        </h1>
-        <div className={styles.container_video}>
-          <div>
-            <iframe
-              className={styles.box_video}
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/T9qLoDryFeM?rel=0"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              style={{ border: "3px solid #8b30f4" }}
-            ></iframe>
           </div>
         </div>
       </div>

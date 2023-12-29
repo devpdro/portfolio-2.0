@@ -13,7 +13,12 @@ import {
   SiSass,
 } from "react-icons/si";
 import { BsFillBootstrapFill, BsStripe } from "react-icons/bs";
-import { BiLogoNetlify, BiLogoFirebase, BiLogoTypescript, BiLogoNodejs } from "react-icons/bi";
+import {
+  BiLogoNetlify,
+  BiLogoFirebase,
+  BiLogoTypescript,
+  BiLogoNodejs,
+} from "react-icons/bi";
 import { SiStyledcomponents, SiExpress } from "react-icons/si";
 
 import Pokemundi from "../../assets/img/pokemundi.png";
@@ -21,9 +26,10 @@ import TravelBeyond from "../../assets/img/travelBeyond.png";
 import Finans from "../../assets/img/finans.png";
 import Spotify from "../../assets/img/spotify.png";
 import Foodies from "../../assets/img/foodies.png";
-import Play from "../../assets/img/playtv.png"
+import Play from "../../assets/img/playtv.png";
 import Bookworm from "../../assets/img/bookworm.png";
 import AutoLuxury from "../../assets/img/autoluxury.png";
+import Pesqueiro from "../../assets/img/pesqueiro.png";
 
 function Projects() {
   return (
@@ -39,37 +45,71 @@ function Projects() {
             <div className={styles.box_icons}>
               <SiReact className={styles.icon_react} />
               <SiJavascript className={styles.icon_javascript} />
-              <BiLogoFirebase className={styles.icon_firebase}/>
+              <BiLogoFirebase className={styles.icon_firebase} />
               <SiSass className={styles.icon_sass} />
               <SiVercel className={styles.icon_vercel} />
             </div>
             <div className={styles.input_box}>
-            <Link to="/bookworm"> <input type="submit" value="Ver mais" className={styles.input_box} /></Link>
+              <Link to="/bookworm">
+                {" "}
+                <input
+                  type="submit"
+                  value="Ver mais"
+                  className={styles.input_box}
+                />
+              </Link>
             </div>
           </div>
         </div>
+        <div className={styles.box}>
+          <img src={Pesqueiro} alt="Imagem do Website Pesqueiro" />
+          <div className={styles.icons_box_container}>
+            <div className={styles.box_icons}>
+              <SiReact className={styles.icon_react} />
+              <SiJavascript className={styles.icon_javascript} />
+              <SiSass className={styles.icon_sass} />
+            </div>
+            <div className={styles.input_box}>
+              <Link to="/pesqueiro">
+                {" "}
+                <input
+                  type="submit"
+                  value="Ver mais"
+                  className={styles.input_box}
+                />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2>
+        <span>Todos os proje</span>tos
+      </h2>
+      <div className={styles.box_container_projects}>
         <div className={styles.box}>
           <img src={AutoLuxury} alt="Imagem do Projeto de Carros" />
           <div className={styles.icons_box_container}>
             <div className={styles.box_icons}>
               <SiReact className={styles.icon_react} />
               <BiLogoTypescript className={styles.icon_typescript} />
-              <BiLogoNodejs className={styles.icon_node}/>
+              <BiLogoNodejs className={styles.icon_node} />
               <SiExpress className={styles.icon_express} />
               <BsStripe className={styles.icon_stripe} />
               <SiVercel className={styles.icon_vercel} />
             </div>
             <div className={styles.input_box}>
-            <Link to="/auto-luxury"> <input type="submit" value="Ver mais" className={styles.input_box} /></Link>
+              <Link to="/auto-luxury">
+                {" "}
+                <input
+                  type="submit"
+                  value="Ver mais"
+                  className={styles.input_box}
+                />
+              </Link>
             </div>
           </div>
         </div>
-      </div>
-       <h2>
-          <span>Todos os proje</span>tos
-       </h2>
-      <div className={styles.box_container_projects}>
-      <div className={styles.box}>
+        <div className={styles.box}>
           <img src={Play} alt="Imagem do Projeto de Filmes" />
           <div className={styles.icons_box_container}>
             <div className={styles.box_icons}>
@@ -79,10 +119,17 @@ function Projects() {
               <SiVercel className={styles.icon_vercel} />
             </div>
             <div className={styles.input_box}>
-            <Link to="/play-tv"> <input type="submit" value="Ver mais" className={styles.input_box} /></Link>
+              <Link to="/play-tv">
+                {" "}
+                <input
+                  type="submit"
+                  value="Ver mais"
+                  className={styles.input_box}
+                />
+              </Link>
             </div>
           </div>
-          </div>
+        </div>
         <div className={styles.box}>
           <img src={Pokemundi} alt="Imagem do Projeto de Pokemons" />
           <div className={styles.icons_box_container}>
@@ -94,7 +141,14 @@ function Projects() {
               <SiVercel className={styles.icon_vercel} />
             </div>
             <div className={styles.input_box}>
-            <Link to="/pokemundi"> <input type="submit" value="Ver mais" className={styles.input_box} /></Link>
+              <Link to="/pokemundi">
+                {" "}
+                <input
+                  type="submit"
+                  value="Ver mais"
+                  className={styles.input_box}
+                />
+              </Link>
             </div>
           </div>
         </div>
@@ -108,7 +162,14 @@ function Projects() {
               <SiVercel className={styles.icon_vercel} />
             </div>
             <div className={styles.input_box}>
-            <Link to="/travel-beyond"> <input type="submit" value="Ver mais" className={styles.input_box} /></Link>
+              <Link to="/travel-beyond">
+                {" "}
+                <input
+                  type="submit"
+                  value="Ver mais"
+                  className={styles.input_box}
+                />
+              </Link>
             </div>
           </div>
         </div>
@@ -123,7 +184,14 @@ function Projects() {
               <SiVercel className={styles.icon_vercel} />
             </div>
             <div className={styles.input_box}>
-            <Link to="/foodies"> <input type="submit" value="Ver mais" className={styles.input_box} /></Link>
+              <Link to="/foodies">
+                {" "}
+                <input
+                  type="submit"
+                  value="Ver mais"
+                  className={styles.input_box}
+                />
+              </Link>
             </div>
           </div>
         </div>
@@ -137,7 +205,14 @@ function Projects() {
               <BiLogoNetlify className={styles.icon_netlify} />
             </div>
             <div className={styles.input_box}>
-            <Link to="/spotify"> <input type="submit" value="Ver mais" className={styles.input_box} /></Link>
+              <Link to="/spotify">
+                {" "}
+                <input
+                  type="submit"
+                  value="Ver mais"
+                  className={styles.input_box}
+                />
+              </Link>
             </div>
           </div>
         </div>
@@ -151,7 +226,14 @@ function Projects() {
               <BiLogoNetlify className={styles.icon_netlify} />
             </div>
             <div className={styles.input_box}>
-            <Link to="/finans"> <input type="submit" value="Ver mais" className={styles.input_box} /></Link>
+              <Link to="/finans">
+                {" "}
+                <input
+                  type="submit"
+                  value="Ver mais"
+                  className={styles.input_box}
+                />
+              </Link>
             </div>
           </div>
         </div>

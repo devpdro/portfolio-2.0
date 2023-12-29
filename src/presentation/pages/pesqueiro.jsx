@@ -6,13 +6,13 @@ import { AiOutlineArrowLeft } from "react-icons/ai";
 
 import { projectsData } from "../../main/data/data";
 
-function SpotifyClone() {
-  const spotifyCloneProject = projectsData.find(
-    (project) => project.title === "Spotify Clone"
+function Pesqueiro() {
+  const PesqueiroProject = projectsData.find(
+    (project) => project.title === "Pesqueiro"
   );
 
-  if (!spotifyCloneProject) {
-    return <div>Projeto "Spotify Clone" não encontrado.</div>;
+  if (!PesqueiroProject) {
+    return <div>Projeto "Bookworm" não encontrado.</div>;
   }
 
   return (
@@ -20,8 +20,8 @@ function SpotifyClone() {
       <div>
         <img
           className={styles.imgCover}
-          src={spotifyCloneProject.imgSrc}
-          alt={`Imagem do Projeto ${spotifyCloneProject.title}`}
+          src={PesqueiroProject.imgSrc}
+          alt={`Imagem do Projeto ${PesqueiroProject.title}`}
         />
       </div>
       <div className={styles.container}>
@@ -33,7 +33,7 @@ function SpotifyClone() {
           </div>
           <div className={styles.links}>
             <a
-              href={spotifyCloneProject.projectLink}
+              href={PesqueiroProject.projectLink}
               target="_blank"
               rel="noreferrer"
             >
@@ -43,25 +43,17 @@ function SpotifyClone() {
                 value="Acessar projeto"
               />
             </a>
-            <a
-              href={spotifyCloneProject.repositoryLink}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <input
-                className={styles.btn}
-                type="submit"
-                value="Acessar repositório"
-              />
-            </a>
           </div>
         </div>
         <h1 className={styles.title}>
           <span>Descriç</span>ão
         </h1>
-        <div key={spotifyCloneProject.title} className={styles.project}>
+        <div key={PesqueiroProject.title} className={styles.project}>
           <div className={styles.text_box}>
-            <p>{spotifyCloneProject.description}</p>
+            <p>{PesqueiroProject.description}</p>
+            {PesqueiroProject.features ? (
+              <div className={styles.features}></div>
+            ) : null}
           </div>
         </div>
       </div>
@@ -69,4 +61,4 @@ function SpotifyClone() {
   );
 }
 
-export default SpotifyClone;
+export default Pesqueiro;

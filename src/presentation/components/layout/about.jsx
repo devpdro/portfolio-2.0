@@ -17,7 +17,8 @@ function About() {
               desenvolvimento de software. Iniciando uma formação de
               Desenvolvimento Full Stack com especialização em Front-End.
               Atualmente estou focado nas tecnologias voltadas ao FrontEnd,
-              fascinado pelo aprendizado e sempre em busca do próximo nível.
+              fascinado pelo aprendizado e constantemente em busca de
+              conhecimento.
             </p>
           </div>
           <div className={styles.img_box}>

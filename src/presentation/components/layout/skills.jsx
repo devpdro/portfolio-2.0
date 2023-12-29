@@ -7,7 +7,7 @@ import { BsGit} from "react-icons/bs";
 import { FaCss3Alt, FaReact, FaSass, FaFigma } from "react-icons/fa";
 import { BiLogoJavascript, BiLogoBootstrap, BiLogoTypescript} from "react-icons/bi";
 import { SiStyledcomponents, SiNextdotjs, SiTailwindcss, SiRedux} from "react-icons/si";
-
+import { FaNodeJs } from "react-icons/fa6";
 function Skills() {
   return (
     <section id="skills" className={styles.container}>
@@ -44,6 +44,10 @@ function Skills() {
         <div className={styles.box}>
           <h3>CSS-in-JS</h3>
           <SiStyledcomponents className={styles.icon} />
+        </div>
+        <div className={styles.box}>
+          <h3>Node.js</h3>
+          <FaNodeJs className={styles.icon} />
         </div>
         <div className={styles.box}>
           <h3>Figma</h3>
