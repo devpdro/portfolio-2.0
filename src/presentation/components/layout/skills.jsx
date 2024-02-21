@@ -3,11 +3,16 @@ import React from "react";
 import styles from "./skills.module.scss";
 
 import { AiFillHtml5 } from "react-icons/ai";
-import { BsGit} from "react-icons/bs";
+import { BsGit } from "react-icons/bs";
 import { FaCss3Alt, FaReact, FaSass, FaFigma } from "react-icons/fa";
-import { BiLogoJavascript, BiLogoBootstrap, BiLogoTypescript} from "react-icons/bi";
-import { SiStyledcomponents, SiNextdotjs, SiTailwindcss, SiRedux} from "react-icons/si";
-import { FaNodeJs } from "react-icons/fa6";
+import {
+  BiLogoJavascript,
+  BiLogoBootstrap,
+  BiLogoTypescript,
+} from "react-icons/bi";
+import { SiStyledcomponents, SiTailwindcss, SiRedux } from "react-icons/si";
+import { GrMysql } from "react-icons/gr";
+
 function Skills() {
   return (
     <section id="skills" className={styles.container}>
@@ -29,6 +34,7 @@ function Skills() {
           <h3>JavaScript</h3>
           <BiLogoJavascript className={styles.icon} />
         </div>
+
         <div className={styles.box}>
           <h3>TypeSript</h3>
           <BiLogoTypescript className={styles.icon} />
@@ -38,16 +44,12 @@ function Skills() {
           <FaReact className={styles.icon} />
         </div>
         <div className={styles.box}>
-          <h3>Next.js</h3>
-          <SiNextdotjs className={styles.icon} />
-        </div>
-        <div className={styles.box}>
           <h3>CSS-in-JS</h3>
           <SiStyledcomponents className={styles.icon} />
         </div>
         <div className={styles.box}>
-          <h3>Node.js</h3>
-          <FaNodeJs className={styles.icon} />
+          <h3>MySQL</h3>
+          <GrMysql className={styles.icon} />
         </div>
         <div className={styles.box}>
           <h3>Figma</h3>
