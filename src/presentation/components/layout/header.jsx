@@ -1,6 +1,6 @@
 import styles from "./header.module.scss";
 
-import Curriculo from "../../../presentation/assets/pdf/curriculo.pdf";
+import Curriculo from "../../../presentation/assets/pdf/Resume-Victor-Hugo-Pedro.pdf";
 
 function Header() {
   return (
@@ -8,7 +8,7 @@ function Header() {
       <div className={styles.box_container}>
         <div className={styles.text_box}>
           <h2>
-            Seu próximo desenvolvedor <span>Front-End ;{")"}</span>
+            Seu próximo desenvolvedor de <span>Software;{")"}</span>
           </h2>
           <div>
             <a href={Curriculo} target="_blank" rel="noopener noreferrer">

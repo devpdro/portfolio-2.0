@@ -4,17 +4,21 @@
 .container {
   font-family: "Montserrat", sans-serif;
   margin-bottom: 14rem;
+
   h1 {
     @include title;
   }
-  h2 {
+
+  .title {
     margin: 6rem 0 3rem 1.2rem;
     font-size: 1.7rem;
     padding-left: 1rem;
+
     span {
       @include border_gradient_bottom;
     }
   }
+
   .box_container_projects {
     display: flex;
     align-items: center;
@@ -28,80 +32,109 @@
       flex-direction: column;
       transition: transform 0.3s ease;
       opacity: 0.5;
+
+      &:hover .icons_box_container {
+        transform: translateY(0px);
+      }
+
       &:hover {
         opacity: 1;
         transform: scale(1.2);
       }
+
       .img {
+        height: 200px;
+        background-size: cover;
+        object-fit: cover;
         z-index: 1;
+        @include border_gradient_bottom;
       }
+
       .icons_box_container {
+        transform: translateY(-25px) translateY(-25px);
+        transition: transform 0.3s ease;
         margin-bottom: 2.2rem;
-        @include border_gradient;
         background-color: $color-tertiary;
         border-radius: 0 0 10px 10px;
         @include center_between;
         padding: 0.3rem 0 0.3rem 0.7rem;
+
         .box_icons {
           .icon_typescript {
             @include icon(#2F74C0);
           }
+
           .icon_node {
             @include icon(#71A861);
           }
+
           .icon_express {
             @include icon(#727A82);
             margin-right: 0.3rem;
           }
+
           .icon_stripe {
             @include icon(#6772E5);
             margin-right: 0.3rem;
           }
+
           .icon_firebase {
             @include icon(#ffcd32);
             margin-right: 0.3rem;
           }
+
           .icon_styled {
             @include icon(#e48e84);
             margin-right: 0.3rem;
           }
+
           .icon_next {
             @include icon(#fff);
             margin-right: 0.3rem;
           }
+
           .icon_react {
             @include icon(#5ed3f3);
           }
+
           .icon_sass {
             @include icon(#c76494);
           }
+
           .icon_vercel {
             @include icon(#fff);
           }
+
           .icon_netlify {
             @include icon(#3aadbc);
           }
+
           .icon_javascript {
             @include icon(#efd81d);
             margin-right: 0.3rem;
           }
+
           .icon_bootstrap {
             @include icon(#6c10ed);
             margin-right: 0.3rem;
           }
+
           .icon_css {
             @include icon(#2d53e5);
           }
+
           .icon_html {
             @include icon(#dd4b25);
           }
         }
+
         .input_box {
           padding: 0.2rem 0.4rem 0.2rem 0;
+
           input {
             font-family: "Poppins", sans-serif;
             border-radius: 25px;
-            font-size: 0.9rem;
+            font-size: 0.7rem;
             background-color: $color-secondary;
             color: $color-primary;
             border: none;
@@ -109,6 +142,7 @@
             outline: none;
             padding: 0.4rem 1rem;
             @include transition;
+
             &:hover {
               transform: scale(1.1);
             }
@@ -118,10 +152,29 @@
     }
   }
 }
+
 @media screen and (max-width: 863px) {
   .box_container_projects {
     justify-content: center;
+
     .box {
+      &:hover {
+        opacity: 1;
+        transform: scale(1.1) !important;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 863px) and (max-width: 1294px) {
+  .box_container_projects {
+
+    justify-content: center;
+
+    .box {
+      width: 40% !important;
+
       &:hover {
         opacity: 1;
         transform: scale(1.1) !important;

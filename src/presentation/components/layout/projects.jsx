@@ -12,13 +12,14 @@ function Projects() {
   return (
     <section id="projects" className={styles.container}>
       <h1>Projetos</h1>
-      <h2>
-        <span>Destaques</span>
+      <h2 className={styles.title}>
+        <span>Destaqu</span>es
       </h2>
       <div className={styles.box_container_projects}>
         {projects.map((project, index) => (
           <div className={styles.box} key={index}>
             <img
+              className={styles.img}
               src={project.image}
               alt={`Imagem do Projeto ${project.name}`}
             />
@@ -43,13 +44,14 @@ function Projects() {
           </div>
         ))}
       </div>
-      <h2>
-        <span>Todos os Projetos</span>
+      <h2 className={styles.title}>
+        <span>Todos os Projet</span>os
       </h2>
       <div className={styles.box_container_projects}>
         {highlights.map((project, index) => (
           <div className={styles.box} key={index}>
             <img
+              className={styles.img}
               src={project.image}
               alt={`Imagem do Projeto ${project.name}`}
             />

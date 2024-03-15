@@ -14,15 +14,21 @@ function About() {
             <p>
               Meu nome é Victor Hugo Pedro, atualmente estou cursando Ciência da
               Computação, apaixonado por tecnologia, especialmente em
-              desenvolvimento de software. Iniciando uma formação de
-              Desenvolvimento Full Stack com especialização em Front-End.
-              Atualmente estou focado nas tecnologias voltadas ao FrontEnd,
-              fascinado pelo aprendizado e constantemente em busca de
-              conhecimento.
+              desenvolvimento de software. Especializando na stack JavaScript e
+              ReactJs para desenvolver aplicações altamente escaláveis e de alta
+              demanda. Nos últimos anos, tenho mantido um registro de trabalho
+              diário, dedicando-me não apenas a concluir tarefas, mas também a
+              aprimorar minhas habilidades e expandir meu conhecimento. Tenho
+              compromisso com o aprendizado contínuo e a colaboração com equipes
+              para alcançar excelentes resultados.
             </p>
           </div>
           <div className={styles.img_box}>
-            <img className={styles.img} src={IMAGES.myPicture} alt="Foto minha" />
+            <img
+              className={styles.img}
+              src={IMAGES.myPicture}
+              alt="Foto minha"
+            />
           </div>
         </div>
       </div>

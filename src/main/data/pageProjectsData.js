@@ -1,6 +1,6 @@
 import { IMAGES } from "../../presentation/assets/images/images";
 
-export const projectsData = [
+export const pageProjects = [
   {
       title: "Pesqueiro",
       imgSrc: IMAGES.pesqueiro,
