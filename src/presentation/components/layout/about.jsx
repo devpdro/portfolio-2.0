@@ -1,6 +1,6 @@
-import styles from "./about.module.scss";
+import { IMAGES } from "../../assets/images/images";
 
-import Image from "../../assets/img/me.png";
+import styles from "./about.module.scss";
 
 function About() {
   return (
@@ -22,7 +22,7 @@ function About() {
             </p>
           </div>
           <div className={styles.img_box}>
-            <img className={styles.img} src={Image} alt="Foto minha" />
+            <img className={styles.img} src={IMAGES.myPicture} alt="Foto minha" />
           </div>
         </div>
       </div>

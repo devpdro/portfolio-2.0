@@ -1,24 +1,16 @@
-import Bookworm from "../../presentation/assets/img/bookworm.png";
-import Foodies from "../../presentation/assets/img/foodies.png";
-import Finans from "../../presentation/assets/img/finans.png";
-import Spotify from "../../presentation/assets/img/spotify.png";
-import Pokemundi from "../../presentation/assets/img/pokemundi.png";
-import Play from "../../presentation/assets/img/playtv.png";
-import TravelBeyond from "../../presentation/assets/img/travelBeyond.png";
-import AutoLuxury from "../../presentation/assets/img/autoluxury.png";
-import Pesqueiro from "../../presentation/assets/img/pesqueiro.png";
+import { IMAGES } from "../../presentation/assets/images/images";
 
 export const projectsData = [
   {
       title: "Pesqueiro",
-      imgSrc: Pesqueiro,
+      imgSrc: IMAGES.pesqueiro,
       description:
         "Como desenvolvedor, destaco a criação do site do Pesqueiro do Cirino, oferecendo uma experiência online envolvente para amantes da pesca. O projeto destaca-se por um layout intuitivo, uma galeria de fotos atrativa que captura a essência do local e um design responsivo, garantindo acessibilidade em diversos dispositivos.",
       projectLink: "https://pesqueirocirino.com/",
     },
     {
       title: "Bookworm",
-      imgSrc: Bookworm,
+      imgSrc: IMAGES.bookworm,
       description:
         "O projeto consiste em um e-commerce de livros, proporcionando aos usuários uma experiência amigável e intuitiva para navegar pela loja. Algumas features que valem a pena destacar: Integração da API do PayPal no processo da finalização da compra, envio de e-mail no formulário com validação, barra de pesquisa em tempo real, sistema de cadastro e carrinho de compras.",
       features: [
@@ -32,7 +24,7 @@ export const projectsData = [
     },
     {
       title: "Auto Luxury",
-      imgSrc: AutoLuxury, 
+      imgSrc: IMAGES.luxury, 
       description:
         "O projeto gira em torno de uma plataforma de reserva de carros de luxo, oferecendo aos usuários uma experiência simples e fácil de usar para explorar a frota com a pesquisa, selecionar os veículos desejados para reserva e finalizar suas reservas.",
       features: [
@@ -45,7 +37,7 @@ export const projectsData = [
     },
     {
       title: "PlayTV",
-      imgSrc: Play, 
+      imgSrc: IMAGES.tv, 
       description:
         "Este projeto proporciona aos usuários a oportunidade de mergulhar em um vasto universo de entretenimento, oferecendo acesso a uma ampla variedade de plataformas de streaming, incluindo Prime Video, Netflix, HBO e muitas outras. Aqui, os amantes de filmes e músicas podem explorar uma seleção diversificada e cativante de conteúdo.",
       projectLink: "https://play-tv-project.vercel.app/",
@@ -53,7 +45,7 @@ export const projectsData = [
     },
     {
       title: "Pokemundi",
-      imgSrc: Pokemundi,
+      imgSrc: IMAGES.pokemundi,
       description:
         "Este projeto é uma aplicação interativa e responsiva, meticulosamente desenvolvida utilizando a poderosa estrutura Next.js. Next.js é uma estrutura de React que oferece a capacidade de criar páginas renderizadas no lado do servidor e realizar a pré-renderização, garantindo um desempenho excepcional e uma experiência de usuário excepcional.",
       projectLink: "https://pokemundi-project.vercel.app/",
@@ -61,7 +53,7 @@ export const projectsData = [
     },
     {
       title: "Travel Beyond",
-      imgSrc: TravelBeyond,
+      imgSrc: IMAGES.travel,
       description:
         "TravelBeyond é uma plataforma excepcional que desvendará as espetaculares maravilhas da África Ocidental. Esta jornada incrível é possível graças à fusão da poderosa tecnologia React com a versatilidade do JSON, simulando uma API.",
       projectLink: "https://travel-beyond-project.vercel.app/",
@@ -69,7 +61,7 @@ export const projectsData = [
     },
     {
       title: "Foodies",
-      imgSrc: Foodies,
+      imgSrc: IMAGES.foodies,
       description:
         "O projeto Foodies é uma expressão visual e envolvente de um restaurante que foi meticulosamente concebido com o propósito de explorar conceitos de design e proporcionar uma experiência excepcional aos usuários. Este ambiente virtual é um convite para uma jornada sensorial que combina arte, gastronomia e inovação.",
       projectLink: "https://projeto-food-two.vercel.app/",
@@ -77,7 +69,7 @@ export const projectsData = [
     },
     {
       title: "Spotify Clone",
-      imgSrc: Spotify,
+      imgSrc: IMAGES.spotify,
       description:
         "Este projeto é uma reinterpretação inspirada no Spotify, transportando os usuários para um envolvente universo de música e entretenimento através de uma interface que cativa os sentidos com sua estética agradável e visualmente impactante.",
       projectLink: "https://spiffy-daffodil-c94357.netlify.app/",
@@ -85,7 +77,7 @@ export const projectsData = [
     },
     {
       title: "Finans",
-      imgSrc: Finans,
+      imgSrc: IMAGES.finans,
       description:
         "Este projeto, desenvolvido há algum tempo, é um testemunho do poder do design atemporal e visualmente envolvente. Apresentando um layout estático que cativa os sentidos, o projeto é uma celebração da estética harmoniosa, com gráficos e cores meticulosamente escolhidos para criar uma experiência visualmente memorável.",
       projectLink: "https://marvelous-monstera-96229f.netlify.app/",
