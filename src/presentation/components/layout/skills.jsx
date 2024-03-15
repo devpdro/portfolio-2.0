@@ -1,76 +1,20 @@
 import React from "react";
 
-import styles from "./skills.module.scss";
+import { skillsData } from "../../../main/data/skillsData";
 
-import { AiFillHtml5 } from "react-icons/ai";
-import { BsGit } from "react-icons/bs";
-import { FaCss3Alt, FaReact, FaSass, FaFigma } from "react-icons/fa";
-import {
-  BiLogoJavascript,
-  BiLogoBootstrap,
-  BiLogoTypescript,
-} from "react-icons/bi";
-import { SiStyledcomponents, SiTailwindcss, SiRedux } from "react-icons/si";
-import { GrMysql } from "react-icons/gr";
+import styles from "./skills.module.scss";
 
 function Skills() {
   return (
     <section id="skills" className={styles.container}>
       <h1>Habilidades</h1>
       <div className={styles.box_skills}>
-        <div className={styles.box}>
-          <h3>HTML5</h3>
-          <AiFillHtml5 className={styles.icon} />
-        </div>
-        <div className={styles.box}>
-          <h3>CSS3</h3>
-          <FaCss3Alt className={styles.icon} />
-        </div>
-        <div className={styles.box}>
-          <h3>BootStrap</h3>
-          <BiLogoBootstrap className={styles.icon} />
-        </div>
-        <div className={styles.box}>
-          <h3>JavaScript</h3>
-          <BiLogoJavascript className={styles.icon} />
-        </div>
-
-        <div className={styles.box}>
-          <h3>TypeSript</h3>
-          <BiLogoTypescript className={styles.icon} />
-        </div>
-        <div className={styles.box}>
-          <h3>React.js</h3>
-          <FaReact className={styles.icon} />
-        </div>
-        <div className={styles.box}>
-          <h3>CSS-in-JS</h3>
-          <SiStyledcomponents className={styles.icon} />
-        </div>
-        <div className={styles.box}>
-          <h3>MySQL</h3>
-          <GrMysql className={styles.icon} />
-        </div>
-        <div className={styles.box}>
-          <h3>Figma</h3>
-          <FaFigma className={styles.icon} />
-        </div>
-        <div className={styles.box}>
-          <h3>Git</h3>
-          <BsGit className={styles.icon} />
-        </div>
-        <div className={styles.box}>
-          <h3>Tailwind</h3>
-          <SiTailwindcss className={styles.icon} />
-        </div>
-        <div className={styles.box}>
-          <h3>SASS</h3>
-          <FaSass className={styles.icon} />
-        </div>
-        <div className={styles.box}>
-          <h3>Redux</h3>
-          <SiRedux className={styles.icon} />
-        </div>
+        {skillsData.map((skill, index) => (
+          <div className={styles.box} key={index}>
+            <h3>{skill.name}</h3>
+            {skill.icon}
+          </div>
+        ))}
       </div>
     </section>
   );
