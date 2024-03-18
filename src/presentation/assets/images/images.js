@@ -8,8 +8,10 @@ import travel from './img/travelBeyond.png';
 import pesqueiro from './img/pesqueiro.png';
 import tv from './img/playtv.png';
 import myPicture from './img/my-picture.png'
+import matte from './img/matte.png'
 
 export const IMAGES = {
+  matte,
   myPicture,
   bookworm,
   luxury,

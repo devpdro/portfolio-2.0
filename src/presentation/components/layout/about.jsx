@@ -1,5 +1,3 @@
-import { IMAGES } from "../../assets/images/images";
-
 import styles from "./about.module.scss";
 
 function About() {
@@ -9,7 +7,7 @@ function About() {
         <div className={styles.box_container}>
           <div className={styles.text_box}>
             <h1>
-              <span>Sobre mi</span>m
+              <span>Sobre mim</span>
             </h1>
             <p>
               Meu nome é Victor Hugo Pedro, atualmente estou cursando Ciência da
@@ -22,13 +20,6 @@ function About() {
               compromisso com o aprendizado contínuo e a colaboração com equipes
               para alcançar excelentes resultados.
             </p>
-          </div>
-          <div className={styles.img_box}>
-            <img
-              className={styles.img}
-              src={IMAGES.myPicture}
-              alt="Foto minha"
-            />
           </div>
         </div>
       </div>

@@ -4,7 +4,17 @@ import { IMAGES } from "../../presentation/assets/images/images";
 import styles from '../../presentation/components/layout/projects.module.scss'; 
 
 export const projects = [
- 
+  {
+    name: "Matte",
+    image: IMAGES.matte,
+    icons: [
+      <ICON.SiReact className={styles.icon_react}/>,
+      <ICON.SiJavascript className={styles.icon_javascript}/>,
+      <ICON.SiSass className={styles.icon_sass}/>,
+      <ICON.SiFigma className={styles.icon_figma} />
+    ],
+    link: "/projeto/matte",
+  },
   {
     name: "Pesqueiro",
     image: IMAGES.pesqueiro,
@@ -13,7 +23,7 @@ export const projects = [
       <ICON.SiJavascript className={styles.icon_javascript}/>,
       <ICON.SiSass className={styles.icon_sass}/>,
     ],
-    link: "/pesqueiro",
+    link: "/projeto/pesqueiro",
   },
    {
     name: "Bookworm",
@@ -25,7 +35,7 @@ export const projects = [
       <ICON.SiSass className={styles.icon_sass}/>,
       <ICON.SiVercel className={styles.icon_vercel}/>,
     ],
-    link: "/bookworm",
+    link: "/projeto/bookworm",
   },
 ];
 
@@ -42,7 +52,7 @@ export const highlights = [
       <ICON.BsStripe className={styles.icon_stripe}/>,
       <ICON.SiVercel className={styles.icon_vercel}/>,
     ],
-    link: "/auto-luxury",
+    link: "/projeto/auto-luxury",
   },
   {
     name: "Play",
@@ -53,7 +63,7 @@ export const highlights = [
       <ICON.SiStyledcomponents className={styles.icon_styled}/>,
       <ICON.SiVercel className={styles.icon_vercel}/>,
     ],
-    link: "/play-tv",
+    link: "/projeto/play-tv",
   },
   {
     name: "Pokemundi",
@@ -65,7 +75,7 @@ export const highlights = [
       <ICON.SiSass className={styles.icon_sass}/>,
       <ICON.SiVercel className={styles.icon_vercel}/>,
     ],
-    link: "/pokemundi",
+    link: "/projeto/pokemundi",
   },
   {
     name: "TravelBeyond",
@@ -76,7 +86,7 @@ export const highlights = [
       <ICON.SiSass className={styles.icon_sass}/>,
       <ICON.SiVercel className={styles.icon_vercel}/>,
     ],
-    link: "/travel-beyond",
+    link: "/projeto/travel-beyond",
   },
   {
     name: "Foodies",
@@ -88,7 +98,7 @@ export const highlights = [
       <ICON.SiJavascript className={styles.icon_javascript}/>,
       <ICON.SiVercel className={styles.icon_vercel}/>,
     ],
-    link: "/foodies",
+    link: "/projeto/foodies",
   },
   {
     name: "Spotify",
@@ -99,7 +109,7 @@ export const highlights = [
       <ICON.BsFillBootstrapFill className={styles.icon_bootstrap}/>,
       <ICON.BiLogoNetlify className={styles.icon_netlify}/>,
     ],
-    link: "/spotify",
+    link: "/projeto/spotify",
   },
   {
     name: "Finans",
@@ -110,6 +120,6 @@ export const highlights = [
       <ICON.BsFillBootstrapFill className={styles.icon_bootstrap}/>,
       <ICON.BiLogoNetlify className={styles.icon_netlify}/>,
     ],
-    link: "/finans",
+    link: "/projeto/finans",
   },
 ];

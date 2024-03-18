@@ -1,4 +1,4 @@
-import { SiReact, SiJavascript, SiSass, SiVercel, SiNextdotjs, SiStyledcomponents, SiExpress, SiHtml5, SiCss3, SiTailwindcss, SiRedux } from "react-icons/si";
+import { SiReact, SiJavascript, SiSass, SiFigma, SiVercel, SiNextdotjs, SiStyledcomponents, SiExpress, SiHtml5, SiCss3, SiTailwindcss, SiRedux } from "react-icons/si";
 import { BsFillBootstrapFill, BsStripe, BsGit } from "react-icons/bs";
 import { BiLogoNetlify, BiLogoFirebase, BiLogoTypescript, BiLogoNodejs, BiLogoBootstrap, BiLogoJavascript } from "react-icons/bi";
 import { AiFillHtml5 } from "react-icons/ai";
@@ -6,6 +6,7 @@ import { FaCss3Alt, FaReact, FaSass, FaFigma } from "react-icons/fa";
 import { GrMysql } from "react-icons/gr";
 
 export const ICON = {
+  SiFigma ,
   SiRedux,
   SiTailwindcss,
   FaReact,

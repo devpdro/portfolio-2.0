@@ -6,18 +6,37 @@
   margin: 0 auto;
 
   .box_container {
-    @include centralize_content;
-    margin-top: 20.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 14.4rem;
+    padding: 0 2rem;
 
     .text_box {
       font-family: "Montserrat", sans-serif;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
 
-      h2 {
-        font-size: 3.6rem;
+      .title {
+        font-size: 2.7rem;
+        font-weight: 700;
+        line-height: 3.2rem;
+        margin-bottom: 0.7rem;
 
         span {
-          text-align: center;
-          display: block;
+          @include background_gradient;
+        }
+      }
+
+      .subtitle {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-left: 0.3rem;
+        margin-bottom: 0.5rem;
+
+        span {
           @include background_gradient;
         }
       }
@@ -56,28 +75,76 @@
         }
       }
     }
-  }
-}
 
-@media (max-width: 867px) {
-  .text_box {
-    margin-bottom: 0rem;
-    padding: 0 1rem;
+    .img_box {
+      .img {
+        @include border_animation;
+        width: 380px;
+        background-color: $color-secondary;
+        padding: 1rem 1rem 0rem 1rem;
+        margin-right: 1.5rem;
+        transition: all 0.4s ease;
 
-    h2 {
-      text-align: center;
-      font-size: 3.2rem !important;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
     }
   }
 }
 
-@media (min-width: 867px) and (max-width: 1000px) {
-  .text_box {
-    margin-bottom: 5rem;
+@media (max-width: 867px) {
+  .box_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 10.4rem !important;
 
-    h2 {
-      text-align: center;
-      font-size: 3.5rem !important;
+    .text_box {
+      display: flex;
+      align-items: center !important;
+      justify-content: center !important;
+      margin-bottom: 5rem;
+      padding: 0 1rem;
+
+      .title {
+        font-size: 2rem !important;
+        line-height: 2.2rem !important;
+        margin-bottom: 0.4rem !important;
+      }
+
+      .subtitle {
+        margin-bottom: 0.2rem !important;
+        font-size: 1.6rem !important;
+      }
+    }
+  }
+}
+
+@media (min-width: 868px) and (max-width: 1000px) {
+  .box_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12.4rem !important;
+
+    .text_box {
+      display: flex;
+      align-items: flex-start !important;
+      justify-content: center !important;
+      margin-bottom: 5rem;
+      padding: 0 1rem;
+
+      .title {
+        font-size: 2.3rem !important;
+        line-height: 2.7rem !important;
+        margin-bottom: 0.4rem !important;
+      }
+
+      .subtitle {
+        margin-bottom: 0.2rem !important;
+      }
     }
   }
 }

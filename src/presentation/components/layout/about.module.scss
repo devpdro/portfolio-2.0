@@ -4,51 +4,49 @@
 .container {
   max-width: 1280px;
   margin: 0 auto;
+
   .box_container {
-    margin: 19rem 0 14rem 0;
-    @include center_between;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 17rem 0 14rem 0;
+
     .text_box {
       line-height: 1.7rem;
       font-family: "Montserrat", sans-serif;
       padding: 0 1.5rem 0 1.5rem;
+
       h1 {
+        text-align: center;
         font-size: 2rem;
         padding-left: 0.3rem;
+
         span {
           @include border_gradient_bottom;
         }
       }
+
       p {
         max-width: 680px;
-        text-align: justify;
-        padding: 0 0.3rem;
+        text-align: center;
+        padding: 0 0.5rem;
         margin-top: 2rem;
         color: $color-paragraph;
         font-size: 1.2rem;
       }
     }
-    .img_box {
-      .img {
-        @include border_animation;
-        width: 380px;
-        background-color: $color-secondary;
-        padding: 1rem 1rem 0rem 1rem;
-        margin-right: 1.5rem;
-        transition: all 0.4s ease;
-        &:hover {
-          transform: scale(1.1);
-        }
-      }
-    }
   }
 }
+
 @media (max-width: 867px) {
   .box_container {
     display: flex;
     justify-content: center;
     flex-direction: column;
+
     .text_box {
       margin-bottom: 4rem;
+
       h1 {
         text-align: center;
       }

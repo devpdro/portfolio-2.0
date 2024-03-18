@@ -118,7 +118,9 @@
             @include icon(#6c10ed);
             margin-right: 0.3rem;
           }
-
+          .icon_figma {
+            @include icon(#EA4C1D)
+          }
           .icon_css {
             @include icon(#2d53e5);
           }
@@ -169,7 +171,6 @@
 
 @media screen and (min-width: 863px) and (max-width: 1294px) {
   .box_container_projects {
-
     justify-content: center;
 
     .box {
