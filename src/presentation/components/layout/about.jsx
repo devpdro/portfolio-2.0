@@ -10,15 +10,15 @@ function About() {
               <span>Sobre mim</span>
             </h1>
             <p>
-              Meu nome é Victor Hugo Pedro, atualmente estou cursando Ciência da
-              Computação, apaixonado por tecnologia, especialmente em
-              desenvolvimento de software. Especializando na stack JavaScript e
-              ReactJs para desenvolver aplicações altamente escaláveis e de alta
-              demanda. Nos últimos anos, tenho mantido um registro de trabalho
-              diário, dedicando-me não apenas a concluir tarefas, mas também a
-              aprimorar minhas habilidades e expandir meu conhecimento. Tenho
-              compromisso com o aprendizado contínuo e a colaboração com equipes
-              para alcançar excelentes resultados.
+              Sou um Desenvolvedor de Software, atualmente cursando Ciência da
+              Computação, apaixonado por tecnologia, especialmente em áreas como
+              desenvolvimento de software. Tenho me especializado na stack
+              JavaScript e ReactJs para criar aplicações altamente escaláveis e
+              de alta demanda. Ao longo dos anos, tenho mantido um registro de
+              trabalho diário, dedicando-me não apenas a concluir tarefas, mas
+              também a aprimorar minhas habilidades e expandir meu conhecimento.
+              Estou comprometido com o aprendizado contínuo e colaboro com
+              equipes para alcançar excelentes resultados.
             </p>
           </div>
         </div>

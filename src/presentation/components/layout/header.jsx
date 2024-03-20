@@ -11,9 +11,6 @@ function Header() {
           <h2 className={styles.title}>
             Olá, eu sou o <br /><span>Victor Hugo ;{")"}</span>
           </h2>
-          <h2 className={styles.subtitle}>
-            <span>Desenvolvedor de Software</span>
-          </h2>
           <div>
             <a href={Curriculo} target="_blank" rel="noopener noreferrer">
               <input className={styles.cv} type="submit" value="Donwload CV" />
