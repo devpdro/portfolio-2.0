@@ -9,7 +9,7 @@ export const projects = [
     image: IMAGES.matte,
     icons: [
       <ICON.SiReact className={styles.icon_react}/>,
-      <ICON.SiJavascript className={styles.icon_javascript}/>,
+      <ICON.BiLogoTypescript className={styles.icon_typescript}/>,
       <ICON.SiSass className={styles.icon_sass}/>,
       <ICON.SiFigma className={styles.icon_figma} />
     ],

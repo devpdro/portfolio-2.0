@@ -1,15 +1,14 @@
-import { IMAGES } from "../../assets/images/images";
+import styles from "./header.module.scss";
 
 import Curriculo from "../../../presentation/assets/pdf/Resume-Victor-Hugo-Pedro.pdf";
-import styles from "./header.module.scss";
 
 function Header() {
   return (
     <header id="header" className={styles.container}>
       <div className={styles.box_container}>
         <div className={styles.text_box}>
-          <h2 className={styles.title}>
-            Olá, eu sou o <br /><span>Victor Hugo ;{")"}</span>
+          <h2>
+            Seu próximo desenvolvedor de <span>Software;{")"}</span>
           </h2>
           <div>
             <a href={Curriculo} target="_blank" rel="noopener noreferrer">
@@ -27,9 +26,6 @@ function Header() {
               />
             </a>
           </div>
-        </div>
-        <div className={styles.img_box}>
-          <img className={styles.img} src={IMAGES.myPicture} alt="Foto minha" />
         </div>
       </div>
     </header>
